@@ -9,9 +9,9 @@ export const homeLoader = async () => {
     }
 }
 
-export const educationLoader = async () => {
+export const aboutLoader = async () => {
     try {
-        return await fetch(URL + "education")
+        return await fetch(URL + "about")
     } catch(error){
         return error
     }
@@ -20,14 +20,6 @@ export const educationLoader = async () => {
 export const projectsLoader = async () => {
     try {
         return await fetch(URL + "projects")
-    } catch(error){
-        return error
-    }
-}
-
-export const jobLoader = async () => {
-    try {
-        return await fetch(URL + "jobs")
     } catch(error){
         return error
     }
