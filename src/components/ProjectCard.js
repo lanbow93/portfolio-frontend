@@ -1,3 +1,25 @@
+/* 
+
+AJAX - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+
+Bootstrap <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" />
+
+CSS <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+
+EJS 
+ExpressJS <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
+
+Git
+HTML
+JavaScript
+jQuery
+ReactJS
+Mongoose
+MongoDB
+Scrum
+Trello
+*/
+
 function ProjectCard(props){
     console.log(props.data)
     const project = props.data
@@ -16,7 +38,9 @@ function ProjectCard(props){
                 <button>Links</button>
             </div>
             <div className="component">
-                <h1>Will Be component</h1>
+                <div className="projectArea">
+                    <p>{project.description}</p>
+                </div>
             </div>
         </div>
     </div>
