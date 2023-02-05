@@ -1,3 +1,6 @@
+body {
+  font-size: 1rem;
+}
 /* ~~~~~~~~~~~~~~~  Navigation  ~~~~~~~~~~~~~~~ */
 nav{
   height: 3rem;
@@ -24,6 +27,9 @@ nav img{
 /* ~~~~~~~~~~~~~~~  Footer  ~~~~~~~~~~~~~~~ */
 .footer {
   background: linear-gradient(to right, #3C7AC0 0%, white 100%);
+  height: 2rem;
+  display: flex;
+  align-items: center;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   position: fixed; 
   left: 0;
@@ -138,6 +144,10 @@ nav img{
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
+
+.tiles button:first-child {
+	border-bottom: none !important;
+}
 .tiles button:hover{
   border-bottom: none;
 }
@@ -149,12 +159,23 @@ nav img{
 .projectArea{
   background-color: white;
   height: 90%;
+
 }
 .projectArea p{
   margin: 1rem;
-  padding-top: .5rem;
-  text-align: justify;
+  text-align: center;
 }
+.projectArea ul {
+  height: 100%;
+  padding: 0 1rem;
+  overflow-y: auto;
+}
+
+.projectArea li {
+  font-size: .75rem;
+  margin-bottom: .5rem;
+}
+
 @media only screen and (max-width: 1000px){
   .homepage {
     grid-template-columns: 1fr;
