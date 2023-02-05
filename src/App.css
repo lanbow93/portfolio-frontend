@@ -42,7 +42,6 @@ nav img{
   padding: 1rem 3rem;
   margin: 0 5rem 5rem 5rem;
 }
-
 .headshot {
   display: flex;
   justify-content: center;
@@ -55,12 +54,13 @@ nav img{
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
   
 }
-
 .contacts {
   text-align: center;
-  border-style: solid;
   border-radius: 2rem;
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+.contacts p{
+  font-size: 1.5rem;
 }
 .iconArea {
   display: flex;
@@ -70,26 +70,76 @@ nav img{
   text-decoration: none;
   color: black;
 }
-
 .linkedin img {
   width: 8rem;
 }
-
 .github img {
   width: 6rem;
 }
-
 .bio {
   grid-column: span 2;
   text-align: justify;
-  border-style: solid;
   border-radius: 2rem;
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
   padding: 1rem 2rem;
 }
+/* ~~~~~~~~~~~~~~~  Project Page  ~~~~~~~~~~~~~~~ */
+.projects, .projectCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.projects {
+  margin-bottom: 5rem;
+  padding: 0 8rem;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+.projectCard{
+  /* border-style: solid; */
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  padding: 1rem;
+  row-gap: 1rem;
+  column-gap: 1rem;
+  border-radius: 1rem;
+}
+.projectCard img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.projectCard h1, .projects h1{
+  grid-column: span 2;
+  text-align: center;
+}
+.projectCard h1 {
+  margin: 0;
+}
+.projectFolder{
+  grid-column: span 2;
+  justify-content: center;
 
-@media only screen and (max-width: 850px){
+}
+.tiles {
+  display: flex;
+  justify-content: space-around;
+}
+.tiles button{
+  width: 100%;
+  background-color: #f1d592 ;
+  border: none;
+  border-left: solid;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.component {
+  background-color: #f1d592;
+  height: 10rem;
+}
+h5 {
+  margin-top: 0;
+}
+@media only screen and (max-width: 1000px){
   .homepage {
+    grid-template-columns: 1fr;
     padding: 1rem 3rem;
     margin: 0 0 5rem 0;
   }
