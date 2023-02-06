@@ -38,6 +38,11 @@ $lightGrey: #555;
     width: 250px;
 }
 
+
+//######################################################
+//####################  HEADER CSS  #################### 
+//###################################################### 
+
 header {
     // background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F64.media.tumblr.com%2Fa39911173ad8fd36f451961c23f504b9%2Ftumblr_of1p3313Al1rldv4go1_1280.gif&f=1&nofb=1&ipt=0bee84832b687b114a5f8b5ee78be70e11c5e37c102491eca4779bafc28e9239&ipo=images");
     height: 300px;
@@ -64,6 +69,7 @@ header {
         flex-direction: row;
         align-items: center;
         height: 100%;
+        width: 100%;
         padding: 1.5rem;
         
         a {
@@ -73,6 +79,7 @@ header {
             text-decoration: none;
             padding: 0 10px;
             left: 0;
+            font-weight: 700;
         }
     }
 
@@ -97,12 +104,12 @@ header {
             z-index: -1;
             position: absolute;
             background-color: transparent;
-            bottom: 20%;
-            left: -130px;
-            height: 150px;
-            width: 150px;
+            bottom: 40%;
+            left: -47px;
+            height: 50px;
+            width: 50px;
             border-radius: 0 0 800px 0;
-            box-shadow: 50px 30px #fff;
+            box-shadow: 10px 10px #fff;
             transform: rotate(-5deg);
             
         }
@@ -112,13 +119,13 @@ header {
             z-index: -1;
             position: absolute;
             background-color: transparent;
-            bottom: 20%;
-            left: 230px;
-            height: 150px;
-            width: 150px;
+            bottom: 40%;
+            right: -46px;
+            height: 50px;
+            width: 50px;
             border-radius: 0 0 800px 0;
-            box-shadow: 50px 30px #fff;
-            transform: rotate(100deg);
+            box-shadow: 10px 15px #fff;
+            transform: scaleX(-1) rotate(-5deg);
         }
     }
 }
@@ -137,6 +144,10 @@ footer {
     position: relative;
     min-height: 100vh;
 }
+
+//######################################################
+//####################  PROJECT CSS #################### 
+//###################################################### 
 
 .project {
     display: flex;

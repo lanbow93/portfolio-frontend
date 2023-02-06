@@ -15,13 +15,13 @@ export default function Header(props){
                      <div>HOME</div>
                 </Link>
 
-                <Link to="/about">
+                {/* <Link to="/about">
                     <div>ABOUT</div>
                 </Link>
 
                 <Link to="/projects">
                     <div>PROJECTS</div>
-                </Link>
+                </Link> */}
             </nav>
         </header>
     )
