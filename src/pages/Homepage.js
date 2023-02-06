@@ -3,6 +3,9 @@ function Homepage(props) {
     const data = useLoaderData()
     console.log(data)
     return <div className="homepage">
+        <div className="statement">
+            <h1>Full-Stack developer building responsive, accessible web applications with Express, JavaScript, React</h1>
+        </div>
         <div className="section headshot">
             <img src={data.headshot} alt="Headshot of developer cropped in a circle"/>
         </div>
