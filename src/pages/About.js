@@ -4,7 +4,7 @@ import Job from "../components/Job";
 import Education from "../components/Education";
 function About(props) {
     const about = useLoaderData()
-    console.log(about)
+
     const [selected, setSelected] = useState("jobHistory")
     const [aboutDisplay, setAboutDisplay] = useState(about.jobs.map(job => <Job data={job} key={job._id} />))
 

@@ -109,10 +109,9 @@ nav img{
   text-align: start !important;
 }
 
-.jobCard {
+.jobCard, .education {
   border-left-style: solid;
   border-right-style: solid;
-  
   border-radius: 8rem;
   margin-bottom: 1rem;
 }
@@ -292,7 +291,7 @@ nav img{
   .about{
     padding: 1rem 1rem; 
   }
-  .jobCard {
+  .jobCard, .education {
     border-left-style: solid;
     border-right-style: solid;
     

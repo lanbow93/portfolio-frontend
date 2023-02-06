@@ -1,5 +1,4 @@
 function Job(props){
-    console.log(props.data)
     const job = props.data
     return <div className="jobCard">
         <h2>{job.title}</h2>
