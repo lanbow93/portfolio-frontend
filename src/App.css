@@ -23,9 +23,6 @@ nav img{
 .navLink:hover{
   text-decoration: underline;
 }
-
-
-
 /* ~~~~~~~~~~~~~~~  Homepage  ~~~~~~~~~~~~~~~ */
 .homepage {
   display: grid;
@@ -47,7 +44,6 @@ nav img{
   max-width: 60%;
   border-style: solid;
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
-  
 }
 .contacts {
   text-align: center;
@@ -78,6 +74,25 @@ nav img{
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
   padding: 1rem 2rem;
 }
+/* ~~~~~~~~~~~~~~~  About Page  ~~~~~~~~~~~~~~~ */
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  padding: 1rem 5rem; 
+  height: auto;
+}
+.about button {
+  font-size: 1.25rem;
+}
+.about .component {
+  height: auto;
+}
+.folder{
+  width: 80%;
+  background-color: #f1d592;
+}
+
 /* ~~~~~~~~~~~~~~~  Project Page  ~~~~~~~~~~~~~~~ */
 .projects {
   display: grid;
@@ -113,11 +128,9 @@ nav img{
   grid-column: span 2;
   text-align: center;
 }
-
 .projectFolder{
   grid-column: span 2;
   justify-content: center;
-
 }
 .tiles {
   display: flex;
@@ -133,11 +146,9 @@ nav img{
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
-
 .selected {
   border-bottom: none !important;
 }
-
 .component {
   background-color: #f1d592;
   height: 11rem;
@@ -157,7 +168,6 @@ nav img{
   padding: 0 1rem;
   overflow-y: auto;
 }
-
 .projectArea li {
   font-size: .75rem;
   margin-bottom: .5rem;
@@ -178,14 +188,12 @@ nav img{
   color: black;
   font-weight: bold;
 }
-
 .skillList{
   margin: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-
 .skillIcon{
   width: 1.5rem !important;
 }
@@ -201,16 +209,12 @@ nav img{
 .skillIconScrum{
   width: 2.5rem !important;
 }
-
 .houdini {
   display: none;
 }
-/* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
-
 /* ~~~~~~~~~~~~~~~  Footer  ~~~~~~~~~~~~~~~ */
 .footer {
   background-color: white;
-  /* background: linear-gradient(to right, #3C7AC0 0%, white 100%); */
   height: 2rem;
   display: flex;
   align-items: center;
@@ -225,7 +229,6 @@ nav img{
 .footer img{
   margin: 0 1rem
 }
-
 @media only screen and (max-width: 1000px){
   .homepage {
     grid-template-columns: 1fr;
