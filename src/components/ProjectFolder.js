@@ -12,7 +12,13 @@ function ProjectFolder(props){
             setDisplay(<ul>{props.summary.map(element => <li>{element}</li>)}</ul>)
             setSelected("summary")
         } else {
-            setDisplay(<div className="description"><p></p></div>)
+            setDisplay(<div className="links">
+                    <p></p>
+                    <a href={props.links?.frontend}><button>{(props.links?.frontend) ? "Frontend" : ""}</button></a>
+                    <a href={props.links?.backend}><button>{(props.links?.frontend) ? "Backend" : ""}</button></a>
+                    <a href={props.links?.live}><button>{(props.links?.live) ? "Live" : ""}</button></a>
+
+                </div>)
             setSelected("links")
         }
     }

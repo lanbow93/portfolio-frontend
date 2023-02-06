@@ -140,10 +140,12 @@ nav img{
   border: none;
   border-left: solid;
   border-bottom: solid;
-  border-bottom-color: #dcbc73;
+  border-bottom-color: #dcbc73;;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
+
+/* #eaca80 */
 
 .selected {
   border-bottom: none !important;
@@ -157,7 +159,7 @@ nav img{
 .projectArea{
   background-color: white;
   height: 90%;
-
+  padding: auto;
 }
 .projectArea p{
   margin: 1rem;
@@ -172,13 +174,34 @@ nav img{
 .projectArea li {
   font-size: .75rem;
   margin-bottom: .5rem;
+  text-align: start;
 }
+.projectArea{
+  text-align: center;
+}
+.projectArea button{
+  justify-self: center;
+  margin: .5rem 1rem;
+  width: 50%;
+  height: 2rem;
+  border-radius: 2rem;
+  border-style: none;
+  box-shadow: #ffecc1 0px 22px 70px 4px;
+  background: linear-gradient(to right, #3C7AC0 0%, white 100%);
+  color: black;
+  font-weight: bold;
+}
+
+/* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
 
 @media only screen and (max-width: 1000px){
   .homepage {
     grid-template-columns: 1fr;
     padding: 1rem 3rem;
     margin: 0 0 5rem 0;
+  }
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
 @media only screen and (max-width: 600px){
