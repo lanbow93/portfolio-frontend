@@ -1,4 +1,4 @@
-const URL = "http://localhost:5454/"
+const URL = "https://portfolio-backend-app.herokuapp.com/"
 
 
 export const homeLoader = async () => {
