@@ -1,10 +1,9 @@
 import { useLoaderData } from "react-router-dom"
 function Homepage(props) {
     const data = useLoaderData()
-    console.log(data)
     return <div className="homepage">
         <div className="statement">
-            <h1>Full-Stack developer building responsive, accessible web applications with Express, JavaScript, React</h1>
+            <h1>Full-Stack developer building responsive, accessible web applications with Express, JavaScript, and React</h1>
         </div>
         <div className="section headshot">
             <img src={data.headshot} alt="Headshot of developer cropped in a circle"/>
@@ -26,14 +25,11 @@ function Homepage(props) {
             </div>
         </div>
         <div className="section bio">
-        
             <p>{data.bio[0].split(".")[0]}.</p>
             <p>{data.bio[0].split(".")[1]}.</p>
             <p>{data.bio[1].split(".")[0]}.</p>
             <p>{data.bio[1].split(".")[1]}.</p>
-        
         </div>
     </div>
 } 
-
 export default Homepage

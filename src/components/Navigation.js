@@ -7,5 +7,4 @@ function Navigation(props) {
        <Link to="/projects" className="navLink">Projects</Link>
     </nav>
 };
-
 export default Navigation;

@@ -5,9 +5,7 @@ function Job(props){
         <h4>{job.company}</h4>
         <h4>{job.date}</h4>
         <h4 className="bottomSpace">{job.location}</h4>
-        
         {job.details.map(detail => <p>{detail}</p>)}
     </div>
 }
-
 export default Job
