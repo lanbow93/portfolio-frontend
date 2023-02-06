@@ -203,13 +203,14 @@ nav img{
 }
 .projectArea ul {
   height: 100%;
-  padding: 0 1rem;
+  padding: 0 .5rem 0 1.5rem ;
   overflow-y: auto;
 }
 .projectArea li {
   font-size: .75rem;
   margin-bottom: .5rem;
   text-align: start;
+  font-size: 1rem;
 }
 .projectArea{
   text-align: center;
