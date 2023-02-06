@@ -1,6 +1,7 @@
 
 
 function SkillIcon(props) {
+    console.log(props.tag)
     switch(props.tag){
         case "AJAX":
             return <img className="skillIconAjax" src="https://static.wixstatic.com/media/8ee8bf_c6bdde2c6ee84d5ca88b2eb6282bbba3~mv2.png" />

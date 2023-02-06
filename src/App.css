@@ -197,7 +197,6 @@ nav img{
   justify-content: space-around;
 }
 
-
 .skillIcon{
   width: 1.5rem !important;
 }
@@ -214,7 +213,9 @@ nav img{
   width: 2.5rem !important;
 }
 
-
+.houdini {
+  display: none;
+}
 /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
 
 @media only screen and (max-width: 1000px){
@@ -232,6 +233,9 @@ nav img{
   }
   .projects h1, .bio {
     grid-column: span 1;
+  }
+  .projectCard {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 10px 0px 5px 10px;
   }
 
 }
