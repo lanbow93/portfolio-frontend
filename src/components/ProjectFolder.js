@@ -1,28 +1,28 @@
 import { useState } from "react";
 
 function ProjectFolder(props){
-
     const [display, setDisplay] = useState(<div className="description"><p>{props.description}</p></div>);
-
-    const [status, setStatus] = useState();
-
-    const updateSection = (event) => {
+    const [selected, setSelected] = useState("description")
+    const updateSection = (event) => {        
         const selection = event.target.value
         if(selection === "description") {
             setDisplay(<div className="description"><p>{props.description}</p></div>)
+            setSelected("description")
         } else if (selection === "summary") {
             setDisplay(<ul>{props.summary.map(element => <li>{element}</li>)}</ul>)
+            setSelected("summary")
         } else {
             setDisplay(<div className="description"><p></p></div>)
+            setSelected("links")
         }
     }
 
 
     return <div className="projectFolder">
         <div className="tiles">
-            <button onClick={updateSection} value="description" >Summary</button>
-            <button onClick={updateSection} value="summary" >Description</button>
-            <button onClick={updateSection} value="links" >Links</button>
+            <button onClick={updateSection} className={(selected === "description")? "selected" : ""} value="description" >Summary</button>
+            <button onClick={updateSection} className={(selected === "summary")? "selected" : ""} value="summary" >Description</button>
+            <button onClick={updateSection} className={(selected === "links")? "selected" : ""} value="links" >Links</button>
         </div>
         <div className="component">
             <div className="projectArea">

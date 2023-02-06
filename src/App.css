@@ -145,12 +145,10 @@ nav img{
   border-top-right-radius: 1rem;
 }
 
-.tiles button:first-child {
-	border-bottom: none !important;
+.selected {
+  border-bottom: none !important;
 }
-.tiles button:hover{
-  border-bottom: none;
-}
+
 .component {
   background-color: #f1d592;
   height: 11rem;
