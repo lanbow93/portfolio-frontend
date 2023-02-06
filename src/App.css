@@ -101,7 +101,7 @@ nav img{
 .projects h1{
   margin-bottom: 0;
 }
-.projectCard h1{
+.projectCard h2{
   margin-top: 0;
 }
 .projectCard{
@@ -111,7 +111,7 @@ nav img{
   padding: 1rem;
   border-radius: 1rem;
 }
-.projectCard img {
+.projectImage img {
   width: 80%;
   border-radius: 1rem;
 }
@@ -120,7 +120,7 @@ nav img{
   justify-content: center;
   margin-top: 1rem;
 }
-.projectCard h1, .projects h1{
+.projectCard h2, .projects h1{
   grid-column: span 2;
   text-align: center;
 }
@@ -144,8 +144,6 @@ nav img{
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
-
-/* #eaca80 */
 
 .selected {
   border-bottom: none !important;
@@ -192,17 +190,50 @@ nav img{
   font-weight: bold;
 }
 
+.skillList{
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.skillIcon{
+  width: 1.5rem !important;
+}
+.skillIconMongo{
+  width: 1.75rem !important;
+}
+.skillIconAjax{
+  width: 2rem !important;
+}
+.skillIconMongoose{
+  width: 3rem !important;
+}
+.skillIconScrum{
+  width: 2.5rem !important;
+}
+
+
 /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
 
 @media only screen and (max-width: 1000px){
   .homepage {
     grid-template-columns: 1fr;
-    padding: 1rem 3rem;
+    padding: 0;
     margin: 0 0 5rem 0;
   }
   .projects {
     grid-template-columns: 1fr;
+    margin-bottom: 5rem;
+    padding: 0;
+    row-gap: 1rem;
+    column-gap: 0;
   }
+  .projects h1, .bio {
+    grid-column: span 1;
+  }
+
 }
 @media only screen and (max-width: 600px){
 /*Big smartphones [426px -> 600px]*/

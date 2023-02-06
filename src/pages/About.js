@@ -5,6 +5,9 @@ function About(props) {
     console.log(About)
     return <div className="About">
         <h1>About Page Connected</h1>
+
+
+
     </div>
 };
 
