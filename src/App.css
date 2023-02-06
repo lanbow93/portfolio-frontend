@@ -87,11 +87,44 @@ nav img{
 }
 .about .component {
   height: auto;
+  padding: 1rem !important;
 }
 .folder{
   width: 80%;
   background-color: #f1d592;
 }
+.jobCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.jobCard h2{
+  grid-column: span 2;
+}
+.jobCard h4{
+  margin: 0;
+}
+.jobCard p{
+  grid-column: span 2;
+  margin: 0 10% 1rem 10% !important;
+  text-align: start !important;
+}
+
+.jobCard {
+  border-left-style: solid;
+  border-right-style: solid;
+  
+  border-radius: 10rem;
+  margin-bottom: 1rem;
+}
+.about .projectArea{
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.jobCard:last-child {
+  border-bottom-style: none;
+  
+}
+
 
 /* ~~~~~~~~~~~~~~~  Project Page  ~~~~~~~~~~~~~~~ */
 .projects {
