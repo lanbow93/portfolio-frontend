@@ -254,8 +254,6 @@ nav img{
 .houdini {
   display: none;
 }
-
-
 /* ~~~~~~~~~~~~~~~  Footer  ~~~~~~~~~~~~~~~ */
 .footer {
   background-color: white;
@@ -298,14 +296,9 @@ nav img{
   .jobCard, .education {
     border-left-style: solid;
     border-right-style: solid;
-    
     border-radius: 1rem;
     margin-bottom: 1rem;
   }
-
-
-  
-
 }
 @media only screen and (max-width: 600px){
 /*Big smartphones [426px -> 600px]*/

@@ -15,7 +15,6 @@ function Footer(props) {
         <img className="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" /> {/* React */}
         <img className="skillIconScrum" src="https://static.wixstatic.com/media/8ee8bf_837eba9587cc49d1a3c5619880e457f9~mv2.jpg" /> {/* Scrum */}
         <img className="skillIconAjax" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain-wordmark.svg" /> {/* Trello */}
-
         </marquee>
     </div>
 }

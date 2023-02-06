@@ -1,5 +1,5 @@
-// const URL = "http://localhost:5454/"
 const URL = "https://portfolio-backend-app.herokuapp.com/"
+
 
 export const homeLoader = async () => {
     try {
@@ -8,7 +8,6 @@ export const homeLoader = async () => {
         return error
     }
 }
-
 export const aboutLoader = async () => {
     try {
         return await fetch(URL + "about")
@@ -16,7 +15,6 @@ export const aboutLoader = async () => {
         return error
     }
 }
-
 export const projectsLoader = async () => {
     try {
         return await fetch(URL + "projects")

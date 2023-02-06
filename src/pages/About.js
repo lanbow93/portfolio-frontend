@@ -4,10 +4,8 @@ import Job from "../components/Job";
 import Education from "../components/Education";
 function About(props) {
     const about = useLoaderData()
-
     const [selected, setSelected] = useState("jobHistory")
     const [aboutDisplay, setAboutDisplay] = useState(about.jobs.map(job => <Job data={job} key={job._id} />))
-
     const updateComponent = (event) => {
         if(event.target.value === "jobHistory") {
             setSelected("jobHistory")
@@ -17,9 +15,6 @@ function About(props) {
             setAboutDisplay(about.education.map(item => <Education data={item} key={item._id} />))
         }
     }
-
-
-
     return <div className="about">
     <div className="tiles">
         <button onClick={updateComponent} className={(selected === "jobHistory")? "selected" : ""} value="jobHistory" >Job History</button>
@@ -32,5 +27,4 @@ function About(props) {
     </div>
 </div>
 };
-
 export default About;

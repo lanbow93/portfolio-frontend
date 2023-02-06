@@ -1,7 +1,4 @@
-
-
 function SkillIcon(props) {
-    console.log(props.tag)
     switch(props.tag){
         case "AJAX":
             return <img className="skillIconAjax" src="https://static.wixstatic.com/media/8ee8bf_c6bdde2c6ee84d5ca88b2eb6282bbba3~mv2.png" />
@@ -35,5 +32,4 @@ function SkillIcon(props) {
             return <img className="skillIcon" src="https://w7.pngwing.com/pngs/721/358/png-transparent-black-and-blue-laptop-computer-illustration-computer-programming-programmer-icon-design-software-developer-icon-coder-blue-web-design-text.png" />
     }
 }
-
 export default SkillIcon;
