@@ -1,5 +1,6 @@
 const URL = "https://portfolio-backend-app.herokuapp.com/"
 
+
 export const homeLoader = async () => {
     try {
         return await fetch(URL + "home")
