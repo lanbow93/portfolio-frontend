@@ -13,9 +13,9 @@ function ProjectFolder(props){
         } else {
             setDisplay(<div className="links">
                     <p></p>
-                    <a href={props.links?.frontend} className={(props.links.frontend)? "" : "houdini"} target="_blank" rel="noopener noreferrer" ><button>Frontend</button></a>
-                    <a href={props.links?.backend} className={(props.links.backend)? "" : "houdini"} target="_blank" rel="noopener noreferrer"><button>Backend</button></a>
-                    <a href={props.links?.live} target="_blank" rel="noopener noreferrer"><button>Live Site</button></a>
+                    <a href={props.links?.frontend} className={(props.links.frontend)? "" : "houdini"} target="_blank" rel="noopener" ><button>Frontend</button></a>
+                    <a href={props.links?.backend} className={(props.links.backend)? "" : "houdini"} target="_blank" rel="noopener"><button>Backend</button></a>
+                    <a href={props.links?.live} target="_blank" rel="noopener"><button>Live Site</button></a>
                 </div>)
             setSelected("links")
         }

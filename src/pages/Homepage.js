@@ -13,13 +13,13 @@ function Homepage(props) {
             <p>{data.contact.email}</p>
             <div className="iconArea">
                 <div className="linkedin">
-                    <a href={data.contact.linkedin} target="_blank" rel="noreferrer">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original-wordmark.svg" alt="" />
+                    <a href={data.contact.linkedin} target="_blank" rel="noopener">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original-wordmark.svg" alt="LinkedIn Icon that links to LinkedIn profile" />
                     </a>
                 </div>
                 <div className="github">
-                    <a href={data.contact.github}>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="" width="90rem"/>
+                    <a href={data.contact.github} target="_blank" rel="noopener">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="Github Icon that links to Github profile" width="90rem"/>
                     </a>
                 </div>
             </div>
