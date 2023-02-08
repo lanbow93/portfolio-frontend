@@ -1,32 +1,23 @@
 [
   {
-    "name": "project 3",
-    "live": "https://app.herokuapp.com/whatever",
-    "git": "http://www.github.com/username/reponame",
-    "image": "http://www.imgur.com/pictureofproject.png"
+    "name": "Pokedex",
+    "live": "https://brandonhaupt.github.io/GA-Project-1/",
+    "git": "https://github.com/BrandonHaupt/GA-Project-1",
+    "image": "http://www.imgur.com/pictureofproject.png",
+    "project-id": 1
   },
   {
-    "name": "project 2",
-    "live": "https://app.herokuapp.com/whatever",
-    "git": "http://www.github.com/username/reponame",
-    "image": "http://www.imgur.com/pictureofproject.png"
+    "name": "Cat-alog",
+    "live": "https://cat-alog.onrender.com",
+    "git": "https://github.com/BrandonHaupt/GA-Project-2",
+    "image": "http://www.imgur.com/pictureofproject.png",
+    "project-id": 2
   },
   {
-    "name": "project 3",
-    "live": "https://app.herokuapp.com/whatever",
-    "git": "http://www.github.com/username/reponame",
-    "image": "http://www.imgur.com/pictureofproject.png"
-  },
-  {
-    "name": "project 4",
-    "live": "https://app.herokuapp.com/whatever",
-    "git": "http://www.github.com/username/reponame",
-    "image": "http://www.imgur.com/pictureofproject.png"
-  },
-  {
-    "name": "project 6",
-    "live": "https://app.herokuapp.com/whatever",
-    "git": "http://www.github.com/username/reponame",
-    "image": "http://www.imgur.com/pictureofproject.png"
+    "name": "Road Trip Buddy",
+    "live": "https://project-3-frontend-uxxk.onrender.com/",
+    "git": "https://github.com/ruhamayared/Road-Trip-Buddy-frontend",
+    "image": "https://i.imgur.com/3SScFkz.png",
+    "project-id": 3
   }
 ]

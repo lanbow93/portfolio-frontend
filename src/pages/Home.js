@@ -12,11 +12,16 @@ export default function Home(props){
                 <p>{about.bio}</p>
             </section>
 
+            <section className="skills">
+                <h3>Skills</h3>
+            </section>
+
             <section className="project">
                 {projects.map((project) => (
                     <div className="project-list">
                         <h1>{project.name}</h1>
-                        <img src={project.image} alt={project.name}/>
+                        <span></span>
+                        {/* <img src={project.image} alt={project.name}/> */}
                         <div className="project-buttons">
                         <a href={project.git}>
                             <button>Github</button>
