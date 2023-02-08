@@ -11,9 +11,9 @@ export default function Header(props){
                 <img src={ProfilePicture} alt="profile" className="profile-img"/>
             </div>
             <nav className="nav">
-                <Link to="/">
+                {/* <Link to="/">
                      <div>HOME</div>
-                </Link>
+                </Link> */}
 
                 {/* <Link to="/about">
                     <div>ABOUT</div>
