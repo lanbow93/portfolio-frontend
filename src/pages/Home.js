@@ -14,7 +14,7 @@ export default function Home(props){
                 {/* <h3>Skills</h3> */}
                 <span className="UI-section">
                     <p>UX/UI DESIGN</p>
-                    <p>APP</p>
+                    <p>APP DESIGN</p>
                     <p>FIGMA</p>
                     <p>WIREFRAME</p>
                     <p>GOOGLE FONTS</p>
@@ -40,8 +40,8 @@ export default function Home(props){
 
             <section className="project">
                 {projects.map((project) => (
-                    <div className="project-list">
-                        <h1>{project.name}</h1>
+                    <div className="project-list" id={project.projectid}>
+                        <p>{project.name}</p>
                         {/* <span></span> */}
                         <img src={project.image} alt={project.name}/>
                         <div className="project-buttons">

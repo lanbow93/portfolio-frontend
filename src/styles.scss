@@ -67,19 +67,26 @@ header {
         display: flex;
         position: absolute;
         flex-direction: row;
-        align-items: center;
+        justify-content: center;
+        align-items: flex-start;
         height: 100%;
         width: 100%;
         padding: 1.5rem;
         
-        a {
-            // @include white-text-black-bg();
-            position: relative;
+        // a {
+        //     // @include white-text-black-bg();
+        //     position: relative;
+        //     color: $contrastcolor;
+        //     text-decoration: none;
+        //     padding: 0 10px;
+        //     left: 0;
+        //     font-weight: 700;
+        // }
+
+        p {
             color: $contrastcolor;
-            text-decoration: none;
-            padding: 0 10px;
-            left: 0;
-            font-weight: 700;
+            font-size: 6rem;
+            text-align: center;
         }
     }
 
@@ -165,13 +172,15 @@ header {
 //###################################################### 
 
 .skills {
-    display: flex;
-    justify-content: space-around;
-    margin: 15rem 0;
-    flex-wrap: wrap;
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    row-gap: 1rem;
+    margin: 5rem auto;
+    padding: 10rem 0;
     background-color: #200272;
     color: white;
-    padding: 10rem 0;
     font-weight: lighter;
 
     .UI-section p:nth-child(1), 
@@ -181,13 +190,13 @@ header {
         font-weight: bold;
     }
 
-    .Frontend-section{
-        text-align: center;
-    }
+    // .Frontend-section{
+    //     text-align: center;
+    // }
 
-    .other-section {
-        text-align: right;
-    }
+    // .other-section {
+    //     text-align: right;
+    // }
     
     p{
         margin-top: 10px;
@@ -219,35 +228,48 @@ header {
 
 
 .project {
-    display: flex;
-    justify-content: space-evenly;
-    flex: 0 0 33%;
-    gap: 20px;
-    margin: 6rem 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    width: 100%;
+    margin: 0 auto;
   
+    #project-3 {
+        // margin-top: 70px;
+    }
 
     .project-list {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
+        align-content: center;
         height: 400px;
-        width: 250px;
-        // margin-bottom: 10rem;
-    
-        // &:nth-child(1){
-        //     margin-top: 5rem;
-        // }
+        width: 80%;
+        margin: 2rem 0 0 0;
+   
+        p{
+            font-size: 2rem;
+        }
 
         img{
-            width: 100%;
-            height: 200px;
+            width: 400px;
+            height: 308px;
             border-radius: 10px;
-            object-fit: cover;
+            object-fit: fill;
         }
     
         .project-buttons {
             display: flex;
             flex-direction: row;
+            margin: 10px 0;
+
+            a {
+                margin: 0 10px 0 0;
+                button {
+                    padding: 5px 15px;
+                }
+            }
         }
 
         &:nth-child(1){
@@ -328,6 +350,78 @@ footer {
     bottom: 0;
     background-color: red;
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 4rem;
     padding: 30px;
+}
+
+@media (min-width: 10em) {
+
+    header {
+        nav {
+            .myname{
+                font-size: 4rem;
+                text-align: center;
+                // position: absolute;
+                // top: 10%;
+            }
+            .whoIAm{
+                font-size: 2rem;
+                text-align: center;
+                font-weight: lighter;
+            }
+        }
+    }
+
+    .about {
+        p{
+            width: 80%;
+        }
+    }
+
+    .skills {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        align-items: start;
+
+        .UI-section, .Frontend-section, .other-section {
+            // text-align: center;
+            margin: 2rem auto;
+            justify-content: center ;
+        }
+        
+        p{
+            margin-top: 5px;
+        }
+    }
+}
+
+
+@media (min-width: 40em) {
+    header {
+        nav {
+            .myname{
+                font-size: 6rem;
+                top: 20%;
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+
+    .skills {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 60em) {
+}
+
+@media (min-width: 80em) {
+    .project {
+        grid-template-columns: repeat(3, 1fr);
+
+        #project-3 {
+           
+        }
+    }
 }

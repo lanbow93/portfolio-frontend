@@ -11,6 +11,10 @@ export default function Header(props){
                 <img src={ProfilePicture} alt="profile" className="profile-img"/>
             </div>
             <nav className="nav">
+                <section>    
+                    <p className="myname">Brandon Haupt</p>
+                    <p className="whoIAm">Designer | Developer</p>
+                </section>
                 {/* <Link to="/">
                      <div>HOME</div>
                 </Link> */}
