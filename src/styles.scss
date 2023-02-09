@@ -23,6 +23,7 @@ body {
 $maincolor: #222;
 $contrastcolor: rgb(244, 244, 244);
 $lightGrey: #555;
+$darkpurple: #200272;
 
 // -------------------//
 //        Main        //
@@ -60,6 +61,8 @@ header {
         height: 100%;
         object-fit: cover;
         background-repeat: repeat;
+        filter: brightness(70%);
+        -webkit-filter: brightness(70%);
     }
 
     .nav {
@@ -91,7 +94,7 @@ header {
     }
 
     .profile-image-circle {
-        background-color: white;
+        background-color: $contrastcolor;
         @include height-width-profile-circle();
         border-radius: 50%;
         display: flex;
@@ -157,7 +160,7 @@ header {
     font-size: 1.4rem;
     margin: 15rem 0;
     font-weight: 600;
-    color: #200272;
+    color: $darkpurple;
 
     p{
         width: 50%;
@@ -179,8 +182,8 @@ header {
     row-gap: 1rem;
     margin: 5rem auto;
     padding: 10rem 0;
-    background-color: #200272;
-    color: white;
+    background-color: $darkpurple;
+    color: $contrastcolor;
     font-weight: lighter;
 
     .UI-section p:nth-child(1), 
@@ -208,35 +211,15 @@ header {
 //####################  PROJECT CSS #################### 
 //###################################################### 
 
-// @keyframes PokedexCard-CircleRotate {
-//     0%{
-//         rotate: 0deg;
-//     }
-    
-//     50% {
-//         rotate: 180deg;
-//     }
-
-//     75% {
-//         top: 51%;
-//     }
-    
-//     100%{
-//         top: 52%;
-//     }
-// }
-
 
 .project {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     width: 100%;
+    height: 500px;
     margin: 0 auto;
   
-    #project-3 {
-        // margin-top: 70px;
-    }
 
     .project-list {
         display: flex;
@@ -348,7 +331,8 @@ header {
 footer {
     position: relative;
     bottom: 0;
-    background-color: red;
+    background-color: $darkpurple;
+    color: $contrastcolor;
     width: 100%;
     margin-top: 4rem;
     padding: 30px;
