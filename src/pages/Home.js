@@ -1,9 +1,10 @@
 import projects from "./json/projects.json"
 import about from "./json/about.json"
+// import Footer from '../components/Footer'
 
 export default function Home(props){
     return(
-        <>
+        <main className="container">
             <section className="about">
                 {/* <h2>{about.name}</h2>
                 <h3>{about.email}</h3> */}
@@ -55,6 +56,7 @@ export default function Home(props){
                     </div>
                 ))}
             </section>  
-        </>
+        </main>
+
     )
 }

@@ -21,7 +21,7 @@ body {
 /////////////////
 
 $maincolor: #222;
-$contrastcolor: rgb(244, 244, 244);
+$contrastcolor: #ffffff;
 $lightGrey: #555;
 $darkpurple: #200272;
 
@@ -141,14 +141,23 @@ header {
 }
 
 
-// h1 {
-//     margin: 2rem;
-// }
 
-.App {
+
+
+
+
+//######################################################
+//######################   MAIN  ####################### 
+//###################################################### 
+.container {
     position: relative;
-    min-height: 100vh;
+    min-height: 100%;
+
 }
+
+
+
+
 
 //######################################################
 //######################  ABOUT  ####################### 
@@ -158,7 +167,7 @@ header {
     display: flex;
     justify-content: center;
     font-size: 1.4rem;
-    margin: 15rem 0;
+    margin: 16rem 0;
     font-weight: 600;
     color: $darkpurple;
 
@@ -166,6 +175,7 @@ header {
         width: 50%;
     }
 }
+
 
 
 
@@ -180,7 +190,6 @@ header {
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     row-gap: 1rem;
-    margin: 5rem auto;
     padding: 10rem 0;
     background-color: $darkpurple;
     color: $contrastcolor;
@@ -207,19 +216,20 @@ header {
 }
 
 
+
+
+
 //######################################################
 //####################  PROJECT CSS #################### 
 //###################################################### 
-
 
 .project {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     width: 100%;
-    height: 500px;
-    margin: 0 auto;
-  
+    margin: 5rem auto;
+
 
     .project-list {
         display: flex;
@@ -227,10 +237,9 @@ header {
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
-        height: 400px;
+        padding: 100px 0;
         width: 80%;
-        margin: 2rem 0 0 0;
-   
+
         p{
             font-size: 2rem;
         }
@@ -239,7 +248,7 @@ header {
             width: 400px;
             height: 308px;
             border-radius: 10px;
-            object-fit: fill;
+            object-fit: cover;
         }
     
         .project-buttons {
@@ -255,73 +264,14 @@ header {
             }
         }
 
-        &:nth-child(1){
-            position: relative;
-           
-            :hover{
-                // animation-name: PokedexCard-CircleRotate;
-                // animation-duration: .5s;
-                // animation-iteration-count: 1;
-                // animation-timing-function: ease-in-out;
-                // animation-fill-mode: forwards;
-            }
-            
-            // &::before{
-            //     content: '';
-            //     position: absolute;
-            //     top: 0;
-            //     height: 50%;
-            //     width: 250px;
-            //     background-color: green;
-            //     border-radius: 10px 10px 0 0;
-            // }   
-            // &::after{
-            //     content: '';
-            //     position: absolute;
-            //     bottom: 0;
-            //     height: 50%;
-            //     width: 250px;
-            //     background-color: purple;
-            //     border-radius: 0 0 10px 10px ;
-            // }  
-
-            // span {
-            //     position: relative;
-            //     z-index: 1;
-            //     bottom: 9.2%;
-            //     height: 100px;
-            //     width: 50px;
-            //     margin: 0 auto;
-
-            //     &:hover{
-            //         animation: PokedexCard-CircleRotate .5s ease-in-out forwards;
-            //     }
-
-
-            //     &::before{
-            //         content: '';
-            //         position: absolute;
-            //         bottom: 50%;
-            //         height: 25%;
-            //         width: 50px;
-            //         background-color: red;
-            //         border-radius: 84px 84px 0 0;
-            //     }
-            //     &::after{
-            //         content: '';
-            //         position: absolute;
-            //         top: 50%;
-            //         height: 25%;
-            //         width: 50px;
-            //         background-color: yellow;
-            //         border-radius: 0 0 84px 84px;
-            //     }
-
-                
-            // }
-        }
+        // &:nth-child(1){
+        //     position: relative;
+        // }
     }
 }
+
+
+
 
 
 //######################################################
@@ -329,16 +279,41 @@ header {
 //###################################################### 
 
 footer {
-    position: relative;
-    bottom: 0;
+    // position: relative;
+    // bottom: 0;
+    // background-color: $darkpurple;
+    // color: $contrastcolor;
+    // width: 100%;
+    // height: 100px;
+    // margin-top: 4rem;
+    // padding: 30px;
     background-color: $darkpurple;
     color: $contrastcolor;
-    width: 100%;
-    margin-top: 4rem;
+    height: 100px;
+    display: flex;
+    align-items: center;
     padding: 30px;
 }
 
+
+
+
+
+
+
+
+
+
+
+//######################################################
+//###################  MEDIA QUERY  ####################
+//###################################################### 
+
 @media (min-width: 10em) {
+
+    .App {
+        min-height: 100%;
+    }
 
     header {
         nav {
@@ -377,6 +352,7 @@ footer {
             margin-top: 5px;
         }
     }
+
 }
 
 
@@ -398,14 +374,14 @@ footer {
 }
 
 @media (min-width: 60em) {
+    .project {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (min-width: 80em) {
     .project {
         grid-template-columns: repeat(3, 1fr);
 
-        #project-3 {
-           
-        }
     }
 }
