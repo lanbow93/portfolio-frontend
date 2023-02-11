@@ -14,7 +14,7 @@ export default function Home(props){
             <section className="skills">
                 {/* <h3>Skills</h3> */}
                 <span className="UI-section">
-                    <p>UX/UI DESIGN</p>
+                    <h3>UX/UI DESIGN</h3>
                     <p>APP DESIGN</p>
                     <p>FIGMA</p>
                     <p>WIREFRAME</p>
@@ -22,7 +22,7 @@ export default function Home(props){
                     <p>LOW/HIGH FIDELITY MOCKUPS</p>
                 </span>
                 <span className="Frontend-section">
-                    <p>FRONTEND</p>
+                    <h3>FRONTEND</h3>
                     <p>HTML</p>
                     <p>CSS</p>
                     <p>SASS</p>
@@ -31,7 +31,7 @@ export default function Home(props){
                     <p>NODEJS</p>
                 </span>
                 <span className="other-section">
-                    <p>OTHER</p>
+                    <h3>OTHER</h3>
                     <p>D&D</p>
                     <p>EVERQUEST</p>
                     <p>MINECRAFT</p>
