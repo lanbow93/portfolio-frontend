@@ -42,15 +42,15 @@ function Footer(props) {
             <h3>Message Me</h3>
             <form ref={form} onSubmit={sendEmail}>
               <section className='person_name'>
-                <input type="text" name="user_name" placeholder='Name'/>
+                <input type="text" name="user_name" placeholder='Your Name'/>
               </section>
               
               <section className='person_email'>
-                <input type="email" name="user_email" placeholder='Email'/>
+                <input type="email" name="user_email" placeholder='Your Email'/>
               </section>
 
               <section className='person_message'>
-                <textarea name="message" placeholder='Message' />
+                <textarea name="message" placeholder='Your Message' />
               </section>
 
               <button type="submit" value="Send">Submit</button>
