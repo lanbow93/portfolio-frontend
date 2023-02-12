@@ -39,6 +39,17 @@ $darkpurple: #200272;
     width: 250px;
 }
 
+@mixin box-shadow {
+    box-shadow:
+    0.6px 1.2px 2.2px rgba(0, 0, 0, 0.087),
+    1.4px 2.9px 5.3px rgba(0, 0, 0, 0.115),
+    2.6px 5.4px 10px rgba(0, 0, 0, 0.128),
+    4.7px 9.6px 17.9px rgba(0, 0, 0, 0.134),
+    8.8px 18px 33.4px rgba(0, 0, 0, 0.134),
+    21px 43px 80px rgba(0, 0, 0, 0.13)
+    ;
+}
+
 
 //######################################################
 //####################  HEADER CSS  #################### 
@@ -280,12 +291,91 @@ header {
 footer {
     background-color: $darkpurple;
     color: $contrastcolor;
-    height: 20rem;
+    height: 40rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 30px;
-}
+        
+    .footer-container {
+        position: relative;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
 
+        h3 {
+            font-size: 2rem;
+            padding-bottom: .5rem;
+        }
+
+        //######################################################
+        //################ HIRE ME SECTION  ####################
+        //###################################################### 
+        .HireMePlz{
+            p, a{
+                font-size: 1.3rem;
+                padding: 5px 0;
+            }
+            a{
+                color: $contrastcolor;
+                &:hover {
+                    color: #F46036;
+                }
+            }
+        }
+
+        //######################################################
+        //################## VERTICLE LINE  ####################
+        //###################################################### 
+        .verticle-line{
+            background-color: white;
+            width: 300px;
+            height: 2px;
+            border-radius: 100px;
+        }
+
+        //######################################################
+        //###################  MESSAGE ME  #####################
+        //###################################################### 
+        .form{
+            
+            input, textarea {
+                width: 20rem;
+                border-radius: 6px;
+                border: none;
+                padding: 10px;
+                margin: 5px 0px;
+                color: $darkpurple;
+                @include box-shadow();
+            }
+
+            input {
+                height: 30px;  
+            }
+
+            textarea{
+                height: 60px;
+            }
+
+            button {
+                border-radius: 50px;
+                border: 2px solid $contrastcolor;
+                padding: 10px 30px;
+                &:hover {
+                    cursor: pointer;
+                    border: 2px solid $contrastcolor;
+                    background-color: transparent;
+                    color: $contrastcolor;
+                }
+            }
+            .person_name, .person_email, .person_message{
+                
+            }
+        }
+    }
+}
 
 
 
@@ -369,6 +459,91 @@ footer {
     .project {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    footer{
+        height: 25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .footer-container {
+            position: relative;
+            width: 100%;
+            height: 80%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            h3 {
+                font-size: 2rem;
+                padding-bottom: .5rem;
+            }
+
+            //######################################################
+            //################ HIRE ME SECTION  ####################
+            //###################################################### 
+            .HireMePlz{
+                p, a{
+                    font-size: 1.3rem;
+                    padding: 5px 0;
+                }
+                a{
+                    color: $contrastcolor;
+                    &:hover {
+                        color: #F46036;
+                    }
+                }
+            }
+
+            //######################################################
+            //################## VERTICLE LINE  ####################
+            //###################################################### 
+            .verticle-line{
+                background-color: white;
+                width: 2px;
+                height: 200px;
+                border-radius: 100px;
+            }
+
+            //######################################################
+            //###################  MESSAGE ME  #####################
+            //###################################################### 
+            .form{
+
+                input, textarea {
+                    width: 25rem;
+                    border-radius: 6px;
+                    border: none;
+                    padding: 10px;
+                    margin: 5px 0px;
+                    color: $darkpurple;
+                    @include box-shadow();
+                }
+
+                input {
+                    height: 30px;  
+                }
+
+                textarea{
+                    height: 60px;
+                }
+
+                button {
+                    border-radius: 50px;
+                    padding: 10px 30px;
+                    &:hover {
+                        cursor: pointer;
+                        border: 2px solid $contrastcolor;
+                        background-color: transparent;
+                        color: $contrastcolor;
+                    }
+                }
+                .person_name, .person_email, .person_message{
+                    
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 80em) {
@@ -376,4 +551,5 @@ footer {
         grid-template-columns: repeat(3, 1fr);
 
     }
+
 }
