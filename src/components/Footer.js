@@ -39,7 +39,7 @@ function Footer(props) {
           <span className='verticle-line'></span>
           
           <section className="form">
-            <h3>contact Me</h3>
+            <h3>Contact Me</h3>
             <form ref={form} onSubmit={sendEmail}>
               <section className='person_name'>
                 <input type="text" name="user_name" placeholder='Your Name'/>
