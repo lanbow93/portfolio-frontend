@@ -31,7 +31,7 @@ function Footer(props) {
       <footer>
         <section className='footer-container'>
           <section className='HireMePlz'>
-            <h3>Hire me!</h3>
+            <h3>Hire Me!</h3>
             <p className='my-email'>Haupt.brandon@gmail.com</p>
             <a href='https://docs.google.com/document/d/1dMG3dYKZH-3zKhAEL0s9qsO8B0ixIdVg7qP-qZ3yKIo/edit?usp=sharing' target='_blank' rel='noreferrer'>Resume</a>
           </section>
