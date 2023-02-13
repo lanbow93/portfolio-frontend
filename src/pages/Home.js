@@ -50,7 +50,7 @@ export default function Home(props){
                             <button>Github</button>
                         </a>
                         <a href={project.live}>
-                            <button>live site</button>
+                            <button>Live Site</button>
                         </a>
                         </div>
                     </div>

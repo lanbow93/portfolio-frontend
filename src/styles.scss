@@ -270,6 +270,16 @@ header {
                 margin: 0 10px 0 0;
                 button {
                     padding: 5px 15px;
+                    border: 2px solid $darkpurple;
+                    border-radius: 50px;
+                    color: $darkpurple;
+                    font-weight: bold;
+
+                    &:hover{
+                        background-color: $darkpurple;
+                        color: $contrastcolor;
+                        cursor: pointer;
+                    }
                 }
             }
         }
