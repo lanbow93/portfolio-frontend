@@ -42,12 +42,12 @@ export default function Home(props){
             <section className="project">
                 {projects.map((project) => (
                     <div className="project-list" id={project.projectid}>
-                        <p>{project.name}</p>
+                        <h3>{project.name}</h3>
                         {/* <span></span> */}
                         <img src={project.image} alt={project.name}/>
                         <div className="project-buttons">
                         <a href={project.git}>
-                            <button>Github</button>
+                            <button>GitHub</button>
                         </a>
                         <a href={project.live}>
                             <button>Live Site</button>

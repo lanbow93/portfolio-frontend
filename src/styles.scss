@@ -250,8 +250,9 @@ header {
         padding: 100px 0;
         width: 80%;
 
-        p{
+        h3{
             font-size: 2rem;
+            font-weight: 400;
         }
 
         img{
@@ -559,7 +560,6 @@ footer {
 @media (min-width: 80em) {
     .project {
         grid-template-columns: repeat(3, 1fr);
-
     }
 
 }
