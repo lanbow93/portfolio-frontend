@@ -277,6 +277,11 @@ header {
             border-radius: 10px;
             object-fit: cover;
         }
+
+        .langUsed{
+            text-align: left;
+            padding: 10px 0;
+        }
     
         .project-buttons {
             display: flex;
@@ -291,6 +296,7 @@ header {
                     border-radius: 50px;
                     color: $darkpurple;
                     font-weight: bold;
+                    background-color: transparent;
 
                     &:hover{
                         background-color: $darkpurple;

@@ -49,6 +49,7 @@ export default function Home(props){
                             <h3>{project.name}</h3>
                             {/* <span></span> */}
                             <img src={project.image} alt={project.name}/>
+                            <p className="langUsed">{project.languagesUsed}</p>
                             <div className="project-buttons">
                             <a href={project.git}>
                                 <button>GitHub</button>

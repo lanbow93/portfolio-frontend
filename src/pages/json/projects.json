@@ -4,6 +4,7 @@
     "live": "https://brandonhaupt.github.io/GA-Project-1/",
     "git": "https://github.com/BrandonHaupt/GA-Project-1",
     "image": "https://i.imgur.com/BvMwan5.png",
+    "languagesUsed":"HTML, CSS, and JavaScript",
     "projectid": "project-1"
   },
   {
@@ -11,6 +12,7 @@
     "live": "https://cat-alog.onrender.com",
     "git": "https://github.com/BrandonHaupt/GA-Project-2",
     "image": "https://i.imgur.com/vl5zKvB.png",
+    "languagesUsed":"HTML, CSS, JavaScript, jQuery, EJS, ExpressJS, Mongoose, Node, and Bootstrap",
     "projectid": "project-2"
   },
   {
@@ -18,6 +20,7 @@
     "live": "https://project-3-frontend-uxxk.onrender.com/",
     "git": "https://github.com/ruhamayared/Road-Trip-Buddy-frontend",
     "image": "https://i.imgur.com/3SScFkz.png",
+    "languagesUsed":"HTML, CSS/SCSS, JavaScript, React, Mongoose, and MongoDB",
     "projectid": "project-3"
   }
 ]
