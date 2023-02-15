@@ -195,15 +195,23 @@ header {
 //###################################################### 
 
 .skills {
-    display: grid;
-    gap: .5rem;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    row-gap: 1rem;
-    padding: 10rem 0;
     background-color: $darkpurple;
     color: $contrastcolor;
     font-weight: lighter;
+
+    h2 {
+        font-size: 3rem;
+        padding: 2rem 0 0 0;
+    }
+
+    .skill-container{
+        display: grid;
+        gap: .5rem;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        row-gap: 1rem;
+        padding: 5rem 0 10rem 0;
+    }
 
     .UI-section h3:nth-child(1), 
     .Frontend-section h3:nth-child(1) , 
@@ -234,12 +242,20 @@ header {
 //###################################################### 
 
 .project {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
-    width: 100%;
-    margin: 5rem auto;
+    text-align: center;
 
+    h2 {
+        font-size: 3rem;
+        padding: 2rem 0 0 0;
+    }
+   
+    .project-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;    
+        width: 100%;
+        margin: 5rem auto;
+    }
 
     .project-list {
         display: flex;
@@ -247,7 +263,7 @@ header {
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
-        padding: 100px 0;
+        padding: 2rem 0 5rem 0;
         width: 80%;
 
         h3{
@@ -461,6 +477,16 @@ footer {
         }
     }
 
+    .project {
+        .project-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;    
+            width: 100%;
+            margin: 5rem auto;
+        }
+    }
+
     .skills {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -468,7 +494,19 @@ footer {
 
 @media (min-width: 60em) {
     .project {
-        grid-template-columns: repeat(2, 1fr);
+        .project-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;    
+            width: 100%;
+            margin: 5rem auto;
+        }
+    }
+
+    .skills {
+        .skill-container{
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 
     footer{
