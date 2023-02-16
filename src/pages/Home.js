@@ -1,6 +1,20 @@
 import projects from "./json/projects.json"
 import about from "./json/about.json"
 // import Footer from '../components/Footer'
+import figmaImg from '../components/img/Figma-img.png'
+import WireframeImg from '../components/img/Wireframe-img.png'
+import PhotoshopImg from '../components/img/Photoshop-img.png'
+import AdobeCCImg from '../components/img/AdobeCC-img.png'
+import HTMLImg from '../components/img/HTML-img.png'
+import CSSImg from '../components/img/CSS-img.png'
+import SASSImg from '../components/img/Sass-img.png'
+import JSImg from '../components/img/JS-img.png'
+import ReactImg from '../components/img/React-img.png'
+import MaterialUI from '../components/img/MaterialUI-img.png'
+import Everquest from '../components/img/Everquest-img.png'
+import Minecraft from '../components/img/Minecraft-img.png'
+import DnD from '../components/img/D&D-img.png'
+import Blacksmithing from '../components/img/Blacksmithing-img.png'
 
 export default function Home(props){
     return(
@@ -16,27 +30,101 @@ export default function Home(props){
                 <div className="skill-container">
                     <span className="UI-section">
                         <h3>UX/UI DESIGN</h3>
-                        <p>APP DESIGN</p>
-                        <p>FIGMA</p>
-                        <p>WIREFRAME</p>
-                        <p>GOOGLE FONTS</p>
-                        <p>LOW/HIGH FIDELITY MOCKUPS</p>
+                        <div className='UI-list'>
+                            {/* FIGMA */}
+                            <div className='List-img'>
+                                <img src={figmaImg} alt='Figma'></img>
+                                <p>FIGMA</p>
+                            </div>
+
+                            {/* WIREFRAME */}
+                            <div className='List-img'>
+                                <img src={WireframeImg} alt='Wireframe'></img>
+                                <p>WIREFRAME</p>
+                            </div>
+
+                            {/* PHOTOSHOP */}
+                            <div className='List-img'>
+                                <img src={PhotoshopImg} alt='Photoshop'></img>
+                                <p>PHOTOSHOP</p>
+                            </div>
+
+                            {/* ADOBE CC */}
+                            <div className='List-img'>
+                                <img src={AdobeCCImg} alt='AdobeCC'></img>
+                                <p>ADOBE CC</p>
+                            </div>  
+                        </div>
                     </span>
+
                     <span className="Frontend-section">
                         <h3>FRONTEND</h3>
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>SASS</p>
-                        <p>JS</p>
-                        <p>REACT</p>
-                        <p>NODEJS</p>
+                        <div className='Frontend-list'>
+                            {/* HTML */}
+                            <div className='List-img'>
+                                <img src={HTMLImg} alt='HTML'></img>
+                                <p>HTML</p>
+                            </div>
+
+                            {/* CSS */}
+                            <div className='List-img'>
+                                <img src={CSSImg} alt='CSS'></img>
+                                <p>CSS</p>
+                            </div>
+
+                            {/* SASS */}
+                            <div className='List-img'>
+                                <img src={SASSImg} alt='SASS'></img>
+                                <p>SASS</p> 
+                            </div> 
+
+                            {/* JS */}
+                            <div className='List-img'>
+                                <img src={JSImg} alt='JS'></img>
+                                <p>JS</p>
+                            </div>
+
+                            {/* REACT */}
+                            <div className='List-img'>
+                                <img src={ReactImg} alt='REACT'></img>
+                                <p>REACT</p>
+                            </div>
+
+                            {/* MATERIAL UI */}
+                            <div className='List-img'>
+                                <img src={MaterialUI} alt='MATERIAL UI'></img>
+                                <p>MATERIAL UI</p>
+                            </div>
+                        </div>
                     </span>
+
                     <span className="other-section">
-                        <h3>OTHER</h3>
-                        <p>D&D</p>
-                        <p>EVERQUEST</p>
-                        <p>MINECRAFT</p>
-                        <p>BLACKSMITHING</p>
+                        <h3>INTERESTS</h3>
+                        <div className='Interests-list'>
+                            {/* SASS */}
+                            <div className='List-img'>
+                                <img src={DnD} alt='D&D'></img> 
+                                <p>D&D</p>
+                            </div> 
+
+                            {/* SASS */}
+                            <div className='List-img'>
+                                <img src={Everquest} alt='Everquest'></img> 
+                                <p>EVERQUEST</p>
+                            </div> 
+
+                            {/* SASS */}
+                            <div className='List-img'>
+                                <img src={Minecraft} alt='Minecraft'></img> 
+                                <p>MINECRAFT</p>
+                            </div> 
+
+                            {/* SASS */}
+                            <div className='List-img'>
+                                <img src={Blacksmithing} alt='Blacksmithing'></img> 
+                                <p>BLACKSMITHING</p>
+                            </div> 
+                        </div>
                     </span>
                 </div>
             </section>

@@ -23,7 +23,7 @@ body {
 $maincolor: #222;
 $contrastcolor: #ffffff;
 $lightGrey: #555;
-$darkpurple: #200272;
+$darkpurple: #4600DB;
 
 // -------------------//
 //        Main        //
@@ -183,7 +183,10 @@ header {
 
     p{
         width: 50%;
+        text-align: center;
+        font-size: 4rem;
     }
+
 }
 
 
@@ -211,6 +214,21 @@ header {
         justify-content: center;
         row-gap: 1rem;
         padding: 5rem 0 10rem 0;
+
+        .UI-list, .Frontend-list, .Interests-list{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
+
+            .List-img{
+                display: grid;
+                justify-content: center;
+                justify-items: center;
+                align-content: end;
+                height: 85px;
+            }
+        }
     }
 
     .UI-section h3:nth-child(1), 
@@ -499,19 +517,47 @@ footer {
 }
 
 @media (min-width: 60em) {
+
+    .about {
+        p{
+            text-align: center;
+            font-size: 4rem;
+        }
+    }
+
     .project {
         .project-container{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            justify-items: center;    
+            justify-items: center;
+            align-items: end;
             width: 100%;
             margin: 5rem auto;
+
+            .langUsed{
+                height: 60px;
+            }
         }
     }
 
     .skills {
         .skill-container{
             grid-template-columns: repeat(3, 1fr);
+
+            .UI-list, .Frontend-list, .Interests-list{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: center;
+                align-items: center;
+                padding: 10px 0;
+
+                .List-img{
+                    display: grid;
+                    justify-content: center;
+                    justify-items: center;
+                    align-content: end;
+                }
+            }
         }
     }
 
