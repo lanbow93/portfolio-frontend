@@ -267,6 +267,7 @@ marquee {
   justify-content: space-evenly;
   background-color: lightgrey;
   margin: 0 auto;
+  width: 98%;
 }
 .skillIcon{
   width: 2.5rem !important;
@@ -308,6 +309,12 @@ marquee {
 }
 .footer img{
   margin: 0 1rem
+}
+
+@media only screen and (max-width: 1400px){
+  .projects {
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 1000px){
   .homepage {
