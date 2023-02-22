@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  background-color: #230046;
+  color: white;
+}
 body {
   font-size: 1rem;
 }
@@ -5,8 +14,8 @@ body {
 nav{
   height: 3rem;
   display: flex;
-  background: linear-gradient(to right, #3C7AC0 0%, white 100%);
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #141414;
+  box-shadow: 1px 1px 1px 1px #282828;
   position: sticky; 
   top: 0;
 }
@@ -19,9 +28,14 @@ nav img{
   margin-left: 1rem;
   font-size: 1.5rem;
   color: white;
+  background-color: #141414;
+  border-radius: 10rem;
+  padding: 0 1rem;
+  transition: 500ms;
 }
 .navLink:hover{
-  text-decoration: underline;
+  background-color: white;
+  color: purple;
 }
 /* ~~~~~~~~~~~~~~~  Homepage  ~~~~~~~~~~~~~~~ */
 .homepage {
@@ -39,16 +53,17 @@ nav img{
   justify-content: center;
 }
 .headshot img {
-  border-radius: 40%;
+  border-radius: .75rem;
   width: 100%;
-  max-width: 60%;
+  max-width: 70%;
   border-style: solid;
-  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 3px 2px #fff;
 }
 .contacts {
+  background-color: #141414;
   text-align: center;
-  border-radius: 2rem;
-  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+  border-radius: .75rem;
+  box-shadow: 3px 3px 3px 2px #fff;
 }
 .contacts p{
   font-size: 1.5rem;
@@ -56,6 +71,7 @@ nav img{
 .iconArea {
   display: flex;
   justify-content: space-evenly;
+  background-color: grey;
 }
 .iconArea a{
   text-decoration: none;
@@ -70,13 +86,15 @@ nav img{
 .bio {
   grid-column: span 2;
   text-align: justify;
-  border-radius: 2rem;
-  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+  border-radius: .75rem;
+  box-shadow: 3px 3px 3px 2px #fff;
   padding: 1rem 2rem;
+  background-color: #141414;
 }
 .statement {
   grid-column: span 2;
   text-align: center;
+  
 }
 /* ~~~~~~~~~~~~~~~  About Page  ~~~~~~~~~~~~~~~ */
 .about{
@@ -85,6 +103,7 @@ nav img{
   justify-content: center;  
   padding: 1rem 5rem; 
   height: auto;
+  
 }
 .about button {
   font-size: 1.50rem;
@@ -129,10 +148,8 @@ nav img{
 }
 .bottomSpace{
   margin-bottom: 1rem !important;
+  
 }
-
-
-
 
 /* ~~~~~~~~~~~~~~~  Project Page  ~~~~~~~~~~~~~~~ */
 .projects {
@@ -152,12 +169,14 @@ nav img{
 .projectCard{
   display: flex;
   flex-direction: column;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  background-color: #141414;
+  box-shadow: 3px 3px 3px 2px #282828;
   padding: 1rem;
   border-radius: 1rem;
+  color: white;
 }
 .projectImage img {
-  width: 80%;
+  width: 100%;
   border-radius: 1rem;
 }
 .projectImage {
@@ -196,13 +215,13 @@ nav img{
   padding: .01rem 1rem 1rem 1rem;
 }
 .projectArea{
-  background-color: white;
+  background-color: grey;
   height: 90%;
   padding: auto;
 }
 .projectArea p{
   margin: 1rem;
-  text-align: center;
+  text-align: start;
 }
 .projectArea ul {
   height: 100%;
@@ -223,33 +242,52 @@ nav img{
   margin: .5rem 1rem;
   width: 50%;
   height: 2rem;
-  border-radius: 2rem;
+  border-radius: .75rem;
   border-style: none;
   box-shadow: #ffecc1 0px 22px 70px 4px;
-  background: linear-gradient(to right, #3C7AC0 0%, white 100%);
-  color: black;
+  background: #230046;
+  color: white;
   font-weight: bold;
+  transition: 500ms;
+}
+
+.projectArea button:hover {
+  background-color: #800080;
+}
+
+marquee {
+  display: flex;
+  align-items: center;
 }
 .skillList{
   margin: 1rem;
+  padding: .25rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  background-color: lightgrey;
+  margin: 0 auto;
+  width: 98%;
 }
 .skillIcon{
-  width: 1.5rem !important;
+  width: 2.5rem !important;
+  margin: .25rem;
 }
 .skillIconMongo{
-  width: 1.75rem !important;
+  width: 3rem !important;
+  margin: .25rem;
 }
 .skillIconAjax{
-  width: 2rem !important;
+  width: 3.5rem !important;
+  margin: .25rem;
 }
 .skillIconMongoose{
-  width: 3rem !important;
+  width: 3.75rem !important;
+  margin: .25rem;
 }
 .skillIconScrum{
-  width: 2.5rem !important;
+  width: 3rem !important;
+  margin: .25rem;
 }
 .houdini {
   display: none;
@@ -257,9 +295,10 @@ nav img{
 /* ~~~~~~~~~~~~~~~  Footer  ~~~~~~~~~~~~~~~ */
 .footer {
   background-color: white;
-  height: 2rem;
+  height: 3rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   position: fixed; 
   left: 0;
@@ -270,6 +309,12 @@ nav img{
 }
 .footer img{
   margin: 0 1rem
+}
+
+@media only screen and (max-width: 1400px){
+  .projects {
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 1000px){
   .homepage {
@@ -298,6 +343,9 @@ nav img{
     border-right-style: solid;
     border-radius: 1rem;
     margin-bottom: 1rem;
+  }
+  .skillList{
+    flex-wrap: wrap;
   }
 }
 @media only screen and (max-width: 600px){
