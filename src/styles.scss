@@ -334,6 +334,53 @@ header {
 }
 
 
+// Scroll CSS that allows for navbar change 
+.scroll-down {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between;
+    height: 170px !important;
+    background: $maincolor;
+    transition: 0.25s linear;
+    z-index: 100;
+    align-items: center;
+    flex-wrap: wrap;
+   
+   section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    .whoIAm, .myname {
+        font-size: 2rem;
+        width: 50%;
+    }
+   } 
+
+    .toggleHidden {
+        position: relative;
+        opacity: 1;
+        display: flex;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            background-color: white;
+            color: $darkpurple;
+            border-radius: 50px;
+        }
+    }
+}
+
+.toggleHidden {
+    position: absolute;
+    opacity: 0;
+}
+
 
 
 
@@ -652,51 +699,5 @@ footer {
 @media (min-width: 80em) {
     .project {
         grid-template-columns: repeat(3, 1fr);
-    }
-
-    .scroll-down {
-        position: fixed !important;
-        top: 0;
-        left: 0;
-        width: 100%;
-        display: flex !important;
-        justify-content: space-between;
-        height: 170px !important;
-        background: $darkpurple;
-        transition: 0.25s linear;
-        z-index: 100;
-        align-items: center;
-        flex-wrap: wrap;
-       
-       section{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        
-        .whoIAm, .myname {
-            font-size: 2rem;
-            width: 50%;
-        }
-       } 
-
-        .toggleHidden {
-            position: relative;
-            opacity: 1;
-            display: flex;
-            padding: 10px 20px;
-            text-decoration: none;
-            color: white;
-
-            &:hover {
-                background-color: white;
-                color: $darkpurple;
-                border-radius: 50px;
-            }
-        }
-    }
-
-    .toggleHidden {
-        position: absolute;
-        opacity: 0;
     }
 }

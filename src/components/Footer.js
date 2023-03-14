@@ -1,5 +1,6 @@
 import emailjs from '@emailjs/browser'
 import {useRef} from "react"
+// import Resume from './resume/Frontend Dev Brandon Haupt - SEI Resume.pdf'
 
 function Footer(props) {
     const form = useRef();
@@ -27,6 +28,7 @@ function Footer(props) {
       e.target.reset();
     };
 
+    // https://docs.google.com/document/d/1dMG3dYKZH-3zKhAEL0s9qsO8B0ixIdVg7qP-qZ3yKIo/edit?usp=sharing
     return( 
       <footer>
         <section className='footer-container'>
