@@ -1,5 +1,6 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ProfilePicture from "./img/Profile-picture.png"
+
 
 export default function Header(props){
 
@@ -19,20 +20,36 @@ export default function Header(props){
                     <h1 className="myname">Brandon Haupt</h1>
                     <p className="whoIAm">Designer | Developer</p>
                 </section>
-                {/* <Link to="/">
-                     <div>HOME</div>
-                </Link> */}
 
-                {/* <Link to="/about">
+                <Link className="toggleHidden" to="">
+                     <div>HOME</div>
+                </Link> 
+
+                <Link  className="toggleHidden" to="#skills">
                     <div>ABOUT</div>
                 </Link>
 
-                <Link to="/projects">
+                <Link  className="toggleHidden" to="#project">
                     <div>PROJECTS</div>
-                </Link> */}
+                </Link>
             </nav>
         </header>
     )
 
 }
 
+
+// Waits for the document to load
+window.addEventListener('load', () => {
+    // then runs this function which looks at the document to find the .nav class
+    const onScroll = () => {
+        const nav = document.querySelector('.nav')
+        // finds the position of the page
+        const scrollPosition = window.pageYOffset
+        //then if the scrollPosition is > 230(px?) then it toggles the class
+        nav.classList.toggle("scroll-down", scrollPosition > 230)
+        // console.log(scrollPosition)
+    }
+   
+    document.addEventListener('scroll', onScroll)
+})

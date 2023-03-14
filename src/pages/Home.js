@@ -25,7 +25,7 @@ export default function Home(props){
                 <p>{about.bio}</p>
             </section>
 
-            <section className="skills">
+            <section className="skills" id="skills">
                 <h2>Technical Skills</h2>
                 <div className="skill-container">
                     <span className="UI-section">
@@ -129,7 +129,7 @@ export default function Home(props){
                 </div>
             </section>
 
-            <section className="project">
+            <section className="project" id="project">
                 <h2>Projects</h2>
                 <div className="project-container">
                     {projects.map((project) => (
