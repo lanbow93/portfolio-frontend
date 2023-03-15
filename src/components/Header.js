@@ -32,6 +32,10 @@ export default function Header(props){
                 <Link  className="toggleHidden" to="#project">
                     <div>PROJECTS</div>
                 </Link>
+
+                <Link  className="toggleHidden" to="#project">
+                    <div>Contact Me</div>
+                </Link>
             </nav>
         </header>
     )

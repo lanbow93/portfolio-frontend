@@ -36,6 +36,8 @@ function Footer(props) {
             <h3>Hire Me!</h3>
             <p className='my-email'>Haupt.brandon@gmail.com</p>
             <a href='https://docs.google.com/document/d/1dMG3dYKZH-3zKhAEL0s9qsO8B0ixIdVg7qP-qZ3yKIo/edit?usp=sharing' target='_blank' rel='noreferrer'>Resume</a>
+            <a href='https://www.linkedin.com/in/brandon-haupt/' target='_blank' rel='noreferrer'>Linkedin</a>
+            <a href='https://github.com/BrandonHaupt' target='_blank' rel='noreferrer'>Github</a>
           </section>
 
           <span className='verticle-line'></span>

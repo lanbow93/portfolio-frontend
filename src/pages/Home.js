@@ -22,7 +22,7 @@ export default function Home(props){
             <section className="about animate__animated animate__fadeIn">
                 {/* <h2>{about.name}</h2>
                 <h3>{about.email}</h3> */}
-                <p>{about.bio}</p>
+                <p>{about.bio2}</p>
             </section>
 
             <section className="skills" id="skills">
