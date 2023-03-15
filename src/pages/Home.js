@@ -140,10 +140,10 @@ export default function Home(props){
                             <p className="projectDetails">{project.projectDetails}</p>
                             <p className="langUsed"><strong>Languages used:</strong> {project.languagesUsed}</p>
                             <div className="project-buttons">
-                            <a href={project.git}>
+                            <a href={project.git} target='_blank'>
                                 <button>GitHub</button>
                             </a>
-                            <a href={project.live}>
+                            <a href={project.live} target='_blank'>
                                 <button>Live Site</button>
                             </a>
                             </div>
