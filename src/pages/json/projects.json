@@ -5,7 +5,8 @@
     "git": "https://github.com/BrandonHaupt/GA-Project-1",
     "image": "https://i.imgur.com/BvMwan5.png",
     "languagesUsed":"HTML, CSS, and JavaScript",
-    "projectid": "project-1"
+    "projectid": "project-1",
+    "projectDetails": "Used HTML, CSS, and JS to utilize an open-source API to develop a Pokedex application where users can look up their desired Pokemon with ease. Devised a project plan consisting of low to high fidelity wireframes in Figma"
   },
   {
     "name": "Cat-alog",
@@ -13,7 +14,8 @@
     "git": "https://github.com/BrandonHaupt/GA-Project-2",
     "image": "https://i.imgur.com/vl5zKvB.png",
     "languagesUsed":"HTML, CSS, JavaScript, jQuery, EJS, ExpressJS, Mongoose, Node, and Bootstrap",
-    "projectid": "project-2"
+    "projectid": "project-2",
+    "projectDetails": "Utilized HTML, CSS, JavaScript, jQuery, EJS, ExpressJS, Mongoose, Node, Figma, and Bootstrap to develop a full stack application where users can create, read, update, and delete cats in the Cat-alog."
   },
   {
     "name": "Road Trip Buddy",
@@ -21,6 +23,7 @@
     "git": "https://github.com/ruhamayared/Road-Trip-Buddy-frontend",
     "image": "https://i.imgur.com/3SScFkz.png",
     "languagesUsed":"HTML, CSS/SCSS, JavaScript, React, Mongoose, and MongoDB",
-    "projectid": "project-3"
+    "projectid": "project-3",
+    "projectDetails": "Built a responsive front-end framework utilizing React to ensure proper rendering across devices and scalable UI components for future development with HTML, CSS/SCSS, JavaScript, React, Mongoose, and MongoDB. "
   }
 ]

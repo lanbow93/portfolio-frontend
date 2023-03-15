@@ -300,9 +300,10 @@ header {
             object-fit: cover;
         }
 
-        .langUsed{
+        .langUsed, .projectDetails{
             text-align: left;
             padding: 10px 0;
+            width: 80%;
         }
     
         .project-buttons {
