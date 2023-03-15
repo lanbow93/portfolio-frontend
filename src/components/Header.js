@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import ProfilePicture from "./img/Profile-picture.png"
 
 
@@ -12,7 +13,7 @@ export default function Header(props){
             />
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F64.media.tumblr.com%2Fa39911173ad8fd36f451961c23f504b9%2Ftumblr_of1p3313Al1rldv4go1_1280.gif&f=1&nofb=1&ipt=0bee84832b687b114a5f8b5ee78be70e11c5e37c102491eca4779bafc28e9239&ipo=images" alt="profile" className="header-img"/>
 
-            <div className="profile-image-circle">
+            <div className="profile-image-circle" id="profile-pic">
                 <img src={ProfilePicture} alt="Me in a navy blue shirt and a silver tie" className="profile-img"/>
             </div>
             <nav className="nav">
@@ -21,21 +22,21 @@ export default function Header(props){
                     <p className="whoIAm">Designer | Developer</p>
                 </section>
 
-                <Link className="toggleHidden" to="">
+                <HashLink className="toggleHidden" smooth to="#profile-pic">
                      <div>HOME</div>
-                </Link> 
+                </HashLink> 
 
-                <Link  className="toggleHidden" to="#skills">
+                <HashLink className="toggleHidden" smooth to="#skills">
                     <div>ABOUT</div>
-                </Link>
+                </HashLink>
 
-                <Link  className="toggleHidden" to="#project">
+                <HashLink className="toggleHidden" smooth to="#project">
                     <div>PROJECTS</div>
-                </Link>
+                </HashLink>
 
-                <Link  className="toggleHidden" to="#project">
+                <HashLink className="toggleHidden" smooth to="#footer">
                     <div>CONTACT</div>
-                </Link>
+                </HashLink>
             </nav>
         </header>
     )

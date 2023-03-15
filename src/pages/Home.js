@@ -19,7 +19,7 @@ import Blacksmithing from '../components/img/Blacksmithing-img.png'
 export default function Home(props){
     return(
         <main className="container">
-            <section className="about animate__animated animate__fadeIn">
+            <section className="about animate__animated animate__fadeIn" >
                 {/* <h2>{about.name}</h2>
                 <h3>{about.email}</h3> */}
                 <p>{about.bio2}</p>
