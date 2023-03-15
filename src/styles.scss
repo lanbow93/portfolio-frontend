@@ -273,7 +273,7 @@ header {
     .project-container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        justify-items: center;    
+        justify-items: center;  
         width: 100%;
         margin: 5rem auto;
     }
@@ -303,13 +303,13 @@ header {
         .langUsed, .projectDetails{
             text-align: left;
             padding: 10px 0;
-            width: 80%;
+            width: 90%;
         }
     
         .project-buttons {
             display: flex;
             flex-direction: row;
-            margin: 10px 0;
+            margin: 20px 0;
 
             a {
                 margin: 0 10px 0 0;
@@ -582,7 +582,7 @@ footer {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             justify-items: center;
-            align-items: end;
+            align-items: start;
             width: 100%;
             margin: 5rem auto;
 
