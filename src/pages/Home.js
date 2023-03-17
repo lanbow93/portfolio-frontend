@@ -133,21 +133,32 @@ export default function Home(props){
                 <h2>Projects</h2>
                 <div className="project-container">
                     {projects.map((project) => (
-                        <div className="project-list" id={project.projectid}>
-                            <h3>{project.name}</h3>
-                            {/* <span></span> */}
-                            <img src={project.image} alt={project.name}/>
-                            <p className="projectDetails">{project.projectDetails}</p>
-                            <p className="langUsed"><strong>Languages used:</strong> {project.languagesUsed}</p>
-                            <div className="project-buttons">
-                            <a href={project.git} target='_blank'>
-                                <button>GitHub</button>
-                            </a>
-                            <a href={project.live} target='_blank'>
-                                <button>Live Site</button>
-                            </a>
+                        <div className="card-container">
+                            <article class="card">
+                            <div class="card__inner">
+                                <div class="card__body card__body--front">
+                                    <h3>{project.name}</h3>
+                                    <img src={project.image} alt={project.name}/>
+                                </div>
+                        
+                                <div class="card__body card__body--back">
+                                    <div class="card__title">
+                                        <p className="projectDetails">{project.projectDetails}</p>
+                                        <p className="langUsed"><strong>Languages used:</strong> {project.languagesUsed}</p>
+                                        <div className="project-buttons">
+                                            <a href={project.git} target='_blank'>
+                                                <button>GitHub</button>
+                                            </a>
+                                            <a href={project.live} target='_blank'>
+                                                <button>Live Site</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                    
                             </div>
-                        </div>
+                        </article>
+                       </div>
                     ))}
                 </div>
             </section>  
@@ -155,3 +166,30 @@ export default function Home(props){
 
     )
 }
+
+
+
+
+
+
+{/* <section className="project" id="project">
+<h2>Projects</h2>
+<div className="project-container">
+    {projects.map((project) => (
+        <div className="project-list" id={project.projectid}>
+            <h3>{project.name}</h3>
+            <img src={project.image} alt={project.name}/>
+            <p className="projectDetails">{project.projectDetails}</p>
+            <p className="langUsed"><strong>Languages used:</strong> {project.languagesUsed}</p>
+            <div className="project-buttons">
+            <a href={project.git} target='_blank'>
+                <button>GitHub</button>
+            </a>
+            <a href={project.live} target='_blank'>
+                <button>Live Site</button>
+            </a>
+            </div>
+        </div>
+    ))}
+</div>
+</section>   */}
