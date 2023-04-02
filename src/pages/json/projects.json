@@ -13,17 +13,26 @@
     "live": "https://cat-alog.onrender.com",
     "git": "https://github.com/BrandonHaupt/GA-Project-2",
     "image": "https://i.imgur.com/vl5zKvB.png",
-    "languagesUsed":"HTML, CSS, JavaScript, jQuery, EJS, ExpressJS, Mongoose, Node, and Bootstrap",
+    "languagesUsed":"JavaScript, jQuery, EJS, ExpressJS, Mongoose, Node, and Bootstrap",
     "projectid": "project-2",
-    "projectDetails": "Utilized HTML, CSS, JavaScript, jQuery, EJS, ExpressJS, Mongoose, Node, Figma, and Bootstrap to develop a full stack application where users can create, read, update, and delete cats in the Cat-alog."
+    "projectDetails": "Utilized JavaScript, jQuery, EJS, ExpressJS, Mongoose, Node, Figma, and Bootstrap to develop a full stack application where users can create, read, update, and delete cats in the Cat-alog."
   },
   {
     "name": "Road Trip Buddy",
     "live": "https://project-3-frontend-uxxk.onrender.com/",
     "git": "https://github.com/ruhamayared/Road-Trip-Buddy-frontend",
     "image": "https://i.imgur.com/3SScFkz.png",
-    "languagesUsed":"HTML, CSS/SCSS, JavaScript, React, Mongoose, and MongoDB",
+    "languagesUsed":"SASS, JavaScript, React, Mongoose, and MongoDB",
     "projectid": "project-3",
-    "projectDetails": "Built a responsive front-end framework utilizing React to ensure proper rendering across devices and scalable UI components for future development with HTML, CSS/SCSS, JavaScript, React, Mongoose, and MongoDB. "
+    "projectDetails": "Built a responsive front-end framework utilizing React to ensure proper rendering across devices and scalable UI components for future development with SCSS, JavaScript, React, Mongoose, and MongoDB. "
+  },
+  {
+    "name": "Natures Garden",
+    "live": "https://admirable-mandazi-44a0f9.netlify.app/",
+    "git": "https://github.com/BrandonHaupt/NaturesGarden-Frontend",
+    "image": "https://i.imgur.com/QiZl5ss.png",
+    "languagesUsed":"Vue, JavaScript, Django, and SASS",
+    "projectid": "capstone",
+    "projectDetails": "For my Capstone project we were given one month to teach ourselves a new language and build a responsive full stack application. I utilized Vue to ensure proper rendering across devices and scalable UI components with SCSS, JavaScript, Vue, and Django."
   }
 ]
