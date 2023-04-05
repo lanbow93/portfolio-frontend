@@ -30,8 +30,7 @@ function SkillIcon(props) {
         case "Trello":
             return <img className="skillIconAjax" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain-wordmark.svg" alt={`icon for ${alt}`} />
         case "TypeScript":
-            <img className="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt={`icon for ${alt}`} />
-            return
+            return <img className="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt={`icon for ${alt}`} />
         default:
             return <img className="skillIcon" src="https://w7.pngwing.com/pngs/721/358/png-transparent-black-and-blue-laptop-computer-illustration-computer-programming-programmer-icon-design-software-developer-icon-coder-blue-web-design-text.png" alt="Default icon for when no other icon is found" />
     }
