@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+:root {
+  --main-color: rgb(34, 181, 115);
+}
 
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
 }
 body{
-  background-color: #230046;
+  background-color: black;
   color: white;
 }
 body {
@@ -14,7 +18,7 @@ body {
 nav{
   height: 3rem;
   display: flex;
-  background-color: #141414;
+  background-color: rgb(34, 181, 115);
   box-shadow: 1px 1px 1px 1px #282828;
   position: sticky; 
   top: 0;
@@ -27,16 +31,17 @@ nav img{
   align-self: center;
   margin-left: 1rem;
   font-size: 1.5rem;
-  color: white;
-  background-color: #141414;
+  color: Black;
+  background-color: rgb(34, 181, 115);
   border-radius: 10rem;
   padding: 0 1rem;
   transition: 500ms;
 }
 .navLink:hover{
   background-color: white;
-  color: purple;
+  color: rgb(34, 181, 115);
 }
+
 /* ~~~~~~~~~~~~~~~  Homepage  ~~~~~~~~~~~~~~~ */
 .homepage {
   display: grid;
@@ -48,6 +53,7 @@ nav img{
   padding: 1rem 3rem;
   margin: 0 5rem 5rem 5rem;
 }
+
 .headshot {
   display: flex;
   justify-content: center;
