@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+:root {
+  --main-color: rgb(34, 181, 115);
+}
+
+* {
+  font-family: 'Maven Pro', sans-serif;
+}
+body{
+  background-color: black;
+  color: white;
+}
+body {
+  font-size: 1rem;
+}
+/* ~~~~~~~~~~~~~~~  Navigation  ~~~~~~~~~~~~~~~ */
+nav{
+  height: 3rem;
+  display: flex;
+  background-color: rgb(34, 181, 115);
+  position: sticky; 
+  top: 0;
+}
+nav img{
+  height: 100%;
+}
+.navLink{
+  text-decoration: none;
+  align-self: center;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  color: Black;
+  background-color: rgb(34, 181, 115);
+  border-radius: 10rem;
+  padding: 0 1rem;
+  transition: 500ms;
+}
+.navLink:hover{
+  background-color: white;
+  color: rgb(34, 181, 115);
+}
+
+/* ~~~~~~~~~~~~~~~  Homepage  ~~~~~~~~~~~~~~~ */
+.homepage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+  column-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 3rem;
+  margin: 0 5rem 5rem 5rem;
+}
+
+.headshot {
+  display: flex;
+  justify-content: center;
+}
+
+.headshot img {
+  border-radius: .75rem;
+  width: 100%;
+  max-width: 70%;
+  border-style: solid;
+  box-shadow: 3px 3px 3px 2px #fff;
+}
+.contacts {
+  background-color: #141414;
+  text-align: center;
+  border-radius: .75rem;
+  box-shadow: 3px 3px 3px 2px #fff;
+}
+.contacts p{
+  font-size: 1.5rem;
+}
+.iconArea {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: grey;
+}
+.iconArea a{
+  text-decoration: none;
+  color: black;
+}
+.linkedin img {
+  width: 8rem;
+}
+.github img {
+  width: 6rem;
+}
+.bio {
+  grid-column: span 2;
+  text-align: justify;
+  border-radius: .75rem;
+  box-shadow: 3px 3px 3px 2px #fff;
+  padding: 1rem 2rem;
+  background-color: #141414;
+}
+.statement {
+  grid-column: span 2;
+  text-align: center;
+  
+}
+/* ~~~~~~~~~~~~~~~  About Page  ~~~~~~~~~~~~~~~ */
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  padding: 1rem 5rem; 
+  height: auto;
+  
+}
+.about button {
+  font-size: 1.50rem;
+}
+.about .component {
+  height: auto;
+  padding: 1rem !important;
+}
+.folder{
+  width: 80%;
+  background-color: #f1d592;
+}
+.jobCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.jobCard h2{
+  grid-column: span 2;
+}
+.jobCard h4{
+  margin: 0;
+}
+.jobCard p{
+  grid-column: span 2;
+  margin: 0 10% 1rem 10% !important;
+  text-align: start !important;
+}
+
+.jobCard, .education {
+  border-left-style: solid;
+  border-right-style: solid;
+  border-radius: 8rem;
+  margin-bottom: 1rem;
+}
+.about .projectArea{
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.jobCard:last-child {
+  border-bottom-style: none;
+  
+}
+.bottomSpace{
+  margin-bottom: 1rem !important;
+  
+}
+
+/* ~~~~~~~~~~~~~~~  Project Page  ~~~~~~~~~~~~~~~ */
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5rem;
+  padding: 0 8rem;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+.projects h1{
+  margin-bottom: 0;
+}
+.projectCard h2{
+  margin-top: 0;
+}
+.projectCard{
+  display: flex;
+  flex-direction: column;
+  background-color: #141414;
+  box-shadow: 3px 3px 3px 2px #282828;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+}
+.projectImage img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.projectImage {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.projectCard h2, .projects h1{
+  grid-column: span 2;
+  text-align: center;
+}
+.projectFolder{
+  grid-column: span 2;
+  justify-content: center;
+}
+.tiles {
+  display: flex;
+  justify-content: space-around;
+}
+.tiles button{
+  width: 100%;
+  background-color: #f1d592 ;
+  border: none;
+  border-left: solid;
+  border-bottom: solid;
+  border-bottom-color: #dcbc73;;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.selected {
+  border-bottom: none !important;
+}
+.component {
+  background-color: #f1d592;
+  height: 11rem;
+  padding: .01rem 1rem 1rem 1rem;
+}
+.projectArea{
+  background-color: grey;
+  height: 90%;
+  padding: auto;
+}
+.projectArea p{
+  margin: 1rem;
+  text-align: start;
+}
+.projectArea ul {
+  height: 100%;
+  padding: 0 .5rem 0 1.5rem ;
+  overflow-y: auto;
+}
+.projectArea li {
+  font-size: .75rem;
+  margin-bottom: .5rem;
+  text-align: start;
+  font-size: 1rem;
+}
+.projectArea{
+  text-align: center;
+}
+.projectArea button{
+  justify-self: center;
+  margin: .5rem 1rem;
+  width: 50%;
+  height: 2rem;
+  border-radius: .75rem;
+  border-style: none;
+  box-shadow: #ffecc1 0px 22px 70px 4px;
+  background: #230046;
+  color: white;
+  font-weight: bold;
+  transition: 500ms;
+}
+
+.projectArea button:hover {
+  background-color: #800080;
+}
+
+marquee {
+  display: flex;
+  align-items: center;
+}
+.skillList{
+  margin: 1rem;
+  padding: .25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: lightgrey;
+  margin: 0 auto;
+  width: 98%;
+}
+.skillIcon{
+  width: 2.5rem !important;
+  margin: .25rem;
+}
+.skillIconMongo{
+  width: 3rem !important;
+  margin: .25rem;
+}
+.skillIconAjax{
+  width: 3.5rem !important;
+  margin: .25rem;
+}
+.skillIconMongoose{
+  width: 3.75rem !important;
+  margin: .25rem;
+}
+.skillIconScrum{
+  width: 3rem !important;
+  margin: .25rem;
+}
+.houdini {
+  display: none;
+}
+/* ~~~~~~~~~~~~~~~  Footer  ~~~~~~~~~~~~~~~ */
+.footer {
+  background-color: white;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  position: fixed; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.footer img{
+  margin: 0 1rem
+}
+
+@media only screen and (max-width: 1400px){
+  .projects {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 1000px){
+  .homepage {
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0 0 5rem 0;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+    margin-bottom: 5rem;
+    padding: 0;
+    row-gap: 1rem;
+    column-gap: 0;
+  }
+  .projects h1, .bio, .statement {
+    grid-column: span 1;
+  }
+  .projectCard {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 10px 0px 5px 10px;
+  }
+  .about{
+    padding: 1rem 1rem; 
+  }
+  .jobCard, .education {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+  .skillList{
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 600px){
+/*Big smartphones [426px -> 600px]*/
+}
+@media only screen and (max-width: 425px){
+/*Small smartphones [325px -> 425px]*/
+}
+
+
+
