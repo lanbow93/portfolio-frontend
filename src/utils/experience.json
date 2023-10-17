@@ -1,0 +1,23 @@
+[
+    {
+        "jobTitle": "Systems Support Specialist III",
+        "company": "Texas Health and Human Services",
+        "location": "Austin, Texas",
+        "dates": "November 2020 - Present",
+        "description": ["Create trouble tickets in the agency's problem tracking system allowing real-time tracking and the DSHS to have a issues resolved under 2 hours for COVID critical research and development", "Diagnose, troubleshoot and resolve 45 software, hardware and connectivity issues on average daily, with about 3-5 being mission critical","Identified an issue and workaround for the state VPN though detailed probing and researching, which then allowed 30 thousand workers to resume operation"]
+    },
+    {
+        "jobTitle": "Service Coordinator I",
+        "company": "Facility Solutions Group (Smart Buildings)",
+        "location": "Pflugerville, Texas",
+        "dates": "November 2019 - May 2020",
+        "description": ["Trained in the Agile methodology of Scrum by the local Scrum master, shadowed in daily meetings and was provided paid Scrum materials for further development", "Analyzed system issues and condition reports with Regional Analysts to do cost-benefit analyses, on equipment, technology and implementations to mitigate costs ranging between $400 to $2500 weekly","Strategically planned alongside local engineering team and management to determine priority and and urgency of emerging issues in the system"]
+    },
+    {
+        "jobTitle": "Product Quality Analysis and Customer Insight Analyst",
+        "company": "TruSource Labs (Google/Nest)",
+        "location": "Austin, Texas",
+        "dates": "August 2015 - March 2019",
+        "description": ["Entrusted and provided results with projects such as investigating why a product was damaging systems worth $10,000+ and why end-users were able to self-install causing a spike in call center operations","Developed excel pivot tables to present effectiveness, quality, and findings of department during QBRs and Annual reviews that helped contribute to contract negotiations for organization and the client","Assisted in the training and development for over 7 new ACI analysts allowing our area to take on more projects with multiple engineering departments and solidify our placement in the structure" ]
+    }
+]

@@ -66,8 +66,8 @@ $darkpurple: #3e1694;
 //###################################################### 
 
 header {
-    // background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F64.media.tumblr.com%2Fa39911173ad8fd36f451961c23f504b9%2Ftumblr_of1p3313Al1rldv4go1_1280.gif&f=1&nofb=1&ipt=0bee84832b687b114a5f8b5ee78be70e11c5e37c102491eca4779bafc28e9239&ipo=images");
-    height: 400px;
+
+    height: 25rem;
     width: 100%;
     position: relative;
     display: flex;
@@ -96,16 +96,6 @@ header {
         height: 100%;
         width: 100%;
         padding: 1.5rem;
-        
-        // a {
-        //     // @include white-text-black-bg();
-        //     position: relative;
-        //     color: $contrastcolor;
-        //     text-decoration: none;
-        //     padding: 0 10px;
-        //     left: 0;
-        //     font-weight: 700;
-        // }
 
         h1, p {
             color: $contrastcolor;
@@ -175,33 +165,27 @@ header {
     min-height: 100%;
 }
 
-
-
-
-
 //######################################################
 //######################  ABOUT  ####################### 
 //###################################################### 
 
 .about {
     display: flex;
-    justify-content: center;
-    font-size: 1.4rem;
-    margin: 16rem 0;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    margin: 8rem 0 4rem 0;
     font-weight: 600;
     color: $darkpurple;
 
     p{
         width: 50%;
         text-align: center;
-        font-size: 2rem;
+        margin-bottom: 1rem;
+        
     }
 
 }
-
-
-
-
 
 //######################################################
 //####################### SKILLS ####################### 
@@ -223,11 +207,10 @@ header {
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         row-gap: 1rem;
-        padding: 5rem 0 10rem 0;
+        padding: 2rem 0 5rem 0;
 
         .UI-list, .Frontend-list, .Interests-list{
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
             justify-content: center;
             align-items: center;
 
@@ -236,9 +219,12 @@ header {
                 justify-content: center;
                 justify-items: center;
                 align-content: end;
-                height: 85px;
-                
+                grid-template-columns: 1fr;
                 font-weight: 400;
+                
+                img {
+                    max-width: 7rem;
+                }
             }
         }
     }
@@ -248,15 +234,9 @@ header {
     .other-section h3:nth-child(1){
         font-size: 2rem; 
         font-weight: bold;
+        text-decoration: underline;
+        margin-bottom: .5rem;
     }
-
-    // .Frontend-section{
-    //     text-align: center;
-    // }
-
-    // .other-section {
-    //     text-align: right;
-    // }
     
     h3{
         margin-top: 10px;
@@ -320,9 +300,6 @@ header {
             width: 90%;
         }
     
-        // &:nth-child(1){
-        //     position: relative;
-        // }
     }
 }
 
@@ -332,6 +309,13 @@ header {
     display: grid;
     grid-area: main;
     margin: 2rem 0;
+
+    ul{
+        text-align: start;
+        li{
+            margin-bottom: .5rem;
+        }
+    }
 
     &__inner {
         position: relative;
@@ -356,7 +340,6 @@ header {
     }
     
     &__body--front img{
-        // background-image: url('../img/Card-bottom.png');
         position: relative;
         @include card-size;
         object-fit: cover;
@@ -371,6 +354,7 @@ header {
     }
 
     &__body--back {
+        
         background: rgb(34,34,34);
         background: linear-gradient(306deg, rgba(34,34,34,1) 0%, rgba(62,22,148,1) 100%);
         transform: rotateY(180deg);
@@ -410,6 +394,70 @@ header {
     }
 }
 
+.experience {
+    text-align: center;
+    background-color: $darkpurple;
+    color: $contrastcolor;
+    font-weight: lighter;
+
+    h2 {
+        font-size: 3rem;
+        padding: 2rem 0 0 0;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+    .card__body--front{
+        background-color: $contrastcolor;
+        color: $darkpurple;
+    }
+    .card__body--back{
+        border: 1px solid white;
+    }
+    .experience-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;  
+        width: 100%;
+        margin: 5rem auto;
+
+        .card-container {
+            padding: 0 0 2rem 0;
+        }
+    }
+
+    .experience-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        padding: 2rem 0 5rem 0;
+        width: 80%;
+
+        h3{
+            color: $darkpurple;
+            font-size: 2rem;
+            font-weight: 400;
+        }
+
+        img{
+            width: 400px;
+            height: 308px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .experienceDetails{
+            text-align: left;
+            padding: 10px 0;
+            width: 90%;
+        }
+    
+    }
+}
+
 
 // Scroll CSS that allows for navbar change 
 .scroll-down {
@@ -419,7 +467,7 @@ header {
     width: 100%;
     display: flex !important;
     justify-content: space-between;
-    height: 200px !important;
+    height: 10rem !important;
     background: $maincolor;
     transition: 0.25s linear;
     z-index: 100;
@@ -467,8 +515,7 @@ header {
 //###################################################### 
 
 footer {
-    background-color: $darkpurple;
-    color: $contrastcolor;
+    color: $darkpurple;
     height: 40rem;
     display: flex;
     align-items: center;
@@ -497,7 +544,7 @@ footer {
                 padding: 5px 0;
             }
             a{
-                color: $contrastcolor;
+                color: $darkpurple !important;
                 &:hover {
                     color: #F46036;
                 }
@@ -508,7 +555,7 @@ footer {
         //################## VERTICLE LINE  ####################
         //###################################################### 
         .verticle-line{
-            background-color: white;
+            background-color: $darkpurple !important;
             width: 300px;
             height: 2px;
             border-radius: 100px;
@@ -525,10 +572,13 @@ footer {
                 border: none;
                 padding: 10px;
                 margin: 5px 0px;
-                color: $darkpurple;
+                background-color: $darkpurple;
+                color: $contrastcolor !important;
                 @include box-shadow();
             }
-
+            input::placeholder, textarea::placeholder {
+                color: $contrastcolor;
+            }
             input {
                 height: 30px;  
             }
@@ -540,16 +590,15 @@ footer {
             button {
                 border-radius: 50px;
                 border: 2px solid $contrastcolor;
+                background-color: $darkpurple;
                 padding: 10px 30px;
+                color: $contrastcolor;
                 &:hover {
                     cursor: pointer;
-                    border: 2px solid $contrastcolor;
-                    background-color: transparent;
-                    color: $contrastcolor;
+                    border: 2px solid $darkpurple;
+                    background-color: $contrastcolor !important;
+                    color: $darkpurple !important;
                 }
-            }
-            .person_name, .person_email, .person_message{
-                
             }
         }
     }
@@ -570,6 +619,10 @@ footer {
 
 @media (min-width: 10em) {
 
+    .scroll-down {
+        height: 12rem !important;
+    }
+
     .App {
         min-height: 100%;
     }
@@ -579,8 +632,6 @@ footer {
             .myname{
                 font-size: 4rem;
                 text-align: center;
-                // position: absolute;
-                // top: 10%;
             }
             .whoIAm{
                 font-size: 2rem;
@@ -609,7 +660,8 @@ footer {
         }
         
         p{
-            margin-top: 5px;
+            margin-top: .5rem;
+            margin-bottom: 1rem;
         }
     }
 
@@ -637,8 +689,17 @@ footer {
             margin: 5rem auto;
         }
     }
+    .experience {
+        .experience-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;    
+            width: 100%;
+            margin: 5rem auto;
+        }
+    }
 
-    .skills {
+    .skills{
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -648,12 +709,30 @@ footer {
     .about {
         p{
             text-align: center;
-            font-size: 2rem;
+            font-size: 1.25rem;
         }
     }
 
     .project {
         .project-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            align-items: start;
+            width: 100%;
+            margin: 2rem auto;
+
+            .card-container{
+                padding-bottom: 6rem;
+            }
+
+            .langUsed{
+                height: 60px;
+            }
+        }
+    }
+    .experience {
+        .experience-container{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             justify-items: center;
@@ -681,6 +760,7 @@ footer {
                 justify-content: center;
                 align-items: center;
                 padding: 10px 0;
+                column-gap: 1rem;
 
                 .List-img{
                     display: grid;

@@ -1,0 +1,47 @@
+ [
+  {
+    "name": "RPG OF LEGENDS",
+    "live": "https://rpg-of-legends.netlify.app/",
+    "frontend": "https://github.com/lanbow93/simple_rpg_frontend",
+    "backend": "https://github.com/lanbow93/simple_rpg_backend",
+    "image": "RPG",
+    "languagesUsed":"HTML, CSS, Javascript, Express, Mongoose, MongoDB, GIT",
+    "projectid": "project-1",
+    "description": "RPG of Legends is a basic web-based role-playing game that allows users to create characters, embark on quests, and level up. Users can create accounts, log in, create characters with unique attributes, and send their characters on quests to earn experience points.",
+    "projectDetails": ["Utilized cookies and JWT (JSON Web Tokens) for user authentication to ensure only authorized users can access the game features.","Deployed the application on a cloud platform. The frontend was hosted on Netlify, while the backend was deployed on Render for seamless interaction.", "Utilized MongoDB to store user information and character data, ensuring data persistence and efficient retrieval."]
+  },
+  {
+    "name": "Quiz Wizard",
+    "live": "https://pro-quiz-wizard.netlify.app/",
+    "frontend": "https://github.com/lanbow93/quiz_frontend",
+    "backend": "https://github.com/lanbow93/quiz_backend",
+    "image": "QUIZ",
+    "languagesUsed":"HTML, CSS, TypeScript, React, Mongoose, MongoDB, Trello, Git",
+    "projectid": "project-2",
+    "description": "A Full stack MERN web application is a secure, authenticated platform that uses Typescript to create and take quizzes. The application is designed to provide a seamless user experience with a modern and sleek interface.",
+    "projectDetails": ["Developed a secure, authenticated Full stack MERN web application with Typescript for creating and taking quizzes","Utilized cookies for user authentication to ensure only authorized users can access and manage quizzes", "Implemented CRUD operations on the server-side using Express.js to manage quiz data stored in a MongoDB database" ]
+  },
+  {
+    "name": "My Job Tracker",
+    "live": "https://my-job-tracker-iqlw.onrender.com/",
+    "frontend": "https://github.com/lanbow93/application-tracker-frontend",
+    "backend": "https://github.com/aserene/project3-backend",
+    "image": "TRACKER",
+    "languagesUsed":"HTML, CSS, JavaScript, Bootstrap, Express, React, Mongoose, MongoDB, Scrum, Trello, Git",
+    "projectid": "project-3",
+    "description": "An Express-React App to be able to add, view, and be linked to job postings with details on each job.",
+    "projectDetails": ["Worked in a team and utilized Git for version control during the development and deployment of the project", "Implemented CRUD operations, UI using React components, server-side logic using Express.js, and integrated MongoDB database", "Enhanced user experience by implementing detailed view of each job posting and direct application link"]
+  },
+  {
+    "name": "Harry Potter Wiki",
+    "live": "https://harry-potter-wiki.onrender.com/",
+    "frontend": "https://github.com/lanbow93/Harry_Potter_Wiki",
+    "backend": "",
+    "image": "WIKI",
+    "languagesUsed":"HTML, CSS, JavaScript, Bootstrap, Express, EJS, Mongoose, MongoDB, Git",
+    "projectid": "project-4",
+    "description": "An Express-React App to be able to add, view, and be linked to job postings with details on each job.",
+    "projectDetails": ["Built fully functional and styled CRUD application, storing and accessing information on MongoDB with Mongoose", "Implemented the Bootstrap Framework to supplement CSS, increasing responsiveness to mobile platform","Experienced the importance of abstraction when having to go back an refactor hardcoded areas and debugging"]
+  }
+  
+]
