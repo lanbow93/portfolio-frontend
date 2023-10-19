@@ -52,7 +52,7 @@ $darkpurple: #3e1694;
 
 @mixin card-size{
     width: 350px;
-    height: 400px;
+    height: 450px;
 }
 
 @mixin card-border-radius {
@@ -321,6 +321,7 @@ header {
 
     ul{
         text-align: start;
+        list-style-type: none;
         li{
             margin-bottom: .5rem;
         }
