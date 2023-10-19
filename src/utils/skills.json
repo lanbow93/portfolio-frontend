@@ -1,5 +1,5 @@
 {
-    "frontend": ["AJAX","CSS", "EJS", "HTML", "JAVASCRIPT", "REACT", "SASS"],
+    "frontend": ["BOOTSTRAP","CSS", "HTML", "JAVASCRIPT", "JQUERY", "REACT", "SASS"],
     "backend": ["EJS","EXPRESS", "GIT", "MONGO-DB", "MONGOOSE",  "NODE-JS", "REST API", "TYPESCRIPT"],
     "interests": ["ARDUINO", "HOME AUTOMATION", "IoT", "LINUX","RASPBERRY PI", "ROBOTICS"]
 }

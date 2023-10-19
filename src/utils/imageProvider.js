@@ -1,72 +1,57 @@
-import ajax from "../img/Ajax_Icon.png"
-import arduino from "../img/arduinoIcon.png"
-import css from "../img/CSS-img.png"
-import ejs from "../img/EJS_Icon.png"
-import expressIcon from "../img/expressIcon.png"
-import figma from "../img/Figma-img.png"
-import git from "../img/Git-img.png"
-import github from "../img/Github-img.png"
+import ejs from "../img/ejsIcon.png"
 import homeAutomation from "../img/homeAutomationIcon.png"
-import html from "../img/HTML-img.png"
 import iot from "../img/iotIcon.png"
-import js from "../img/JS-img.png"
-import linuxIcon from "../img/linuxIcon.png"
-import mongoIcon from "../img/mongoIcon.png"
 import mongoose from "../img/mongoose_icon.png"
-import nodeIcon from "../img/nodeIcon.png"
 import quiz from "../img/Quiz_Wizard.png"
-import raspberryPi from "../img/raspberryPiIcon.png"
-import reactImg from "../img/reactIcon.png"
-import rest from "../img/restAPIICon.png"
+import rest from "../img/restAPIIcon.png"
 import robotics from "../img/roboticsIcon.png"
 import rpg from "../img/rpgThumbnail.png"
-import sassImg from "../img/Sass-img.png"
 import tracker from "../img/My_Job_Tracker.png"
-import typescriptIcon from "../img/typescriptIcon.png"
 import wiki from "../img/Harry_Potter_Wiki.png"
-import placeholder from "../img/placeholder.png"
 
 
 export function imageProvider(name){
     switch(name){
-        case "AJAX":
-            return ajax;
         case "ARDUINO":
-            return arduino;
+            return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original-wordmark.svg";
+        case "BOOTSTRAP":
+            return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg";
         case "CSS":
-            return css;
+            return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg";
         case "EJS":
             return ejs;
         case "EXPRESS":
-            return expressIcon;
+            return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg";
         case "FIGMA":
-            return figma;
+            return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg";
         case "GIT":
-            return git;
+            return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg";
         case "GITHUB":
-            return github;
+            return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg";
         case "HOME AUTOMATION":
             return homeAutomation;
         case "HTML":
-            return html;
+            return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg";
         case "IoT":
             return iot;
         case "JAVASCRIPT":
-            return js;
+            return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg";
+        case "JQUERY":
+            return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg";
         case "LINUX":
-            return linuxIcon;
+            return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg";
         case "MONGO-DB":
-            return mongoIcon;
+            return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg";
         case "MONGOOSE":
             return mongoose;
         case "NODE-JS":
-            return nodeIcon;
+            return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg";
         case "QUIZ":
             return quiz;
         case "RASPBERRY PI":
-            return raspberryPi;
+            return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg";
         case "REACT":
-            return reactImg;
+            return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg";
         case "REST API":
             return rest;
         case "ROBOTICS":
@@ -74,15 +59,15 @@ export function imageProvider(name){
         case "RPG":
             return rpg
         case "SASS":
-            return sassImg;
+            return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg";
         case "TRACKER":
             return tracker;
         case "TYPESCRIPT":
-            return typescriptIcon;
+            return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg";
         case "WIKI":
             return wiki;
         default:
-            return placeholder;
+            return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon/devicon-original.svg";
     }
 
 }

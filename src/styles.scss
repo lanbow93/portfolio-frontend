@@ -223,8 +223,17 @@ header {
                 font-weight: 400;
                 
                 img {
-                    max-width: 7rem;
+                    width: 7rem;
+                    max-height: 7rem;
                 }
+            }
+
+            .EJSIcon img{
+                margin: 20.93px 0;
+            }
+            .MONGOOSEIcon img {
+                border-radius: 1rem;
+                margin: 29.34px 0;
             }
         }
     }
