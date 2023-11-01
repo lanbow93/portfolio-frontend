@@ -18,10 +18,10 @@ function ProjectCard(props) {
                 </ul>
                   <p className="langUsed"><strong>Languages used:</strong> {props.languagesUsed}</p>
                   <div className="project-buttons">
-                      <a href={props.git} target="_blank" rel="noopener noreferrer">
+                      <a href={props.frontend} target="_blank" rel="noopener noreferrer">
                           <button>Frontend</button>
                       </a>
-                      {props.backend ? <a href={props.git} target="_blank" rel="noopener noreferrer"><button>Backend</button></a> : ""}
+                      {props.backend ? <a href={props.backend} target="_blank" rel="noopener noreferrer"><button>Backend</button></a> : ""}
                       <a href={props.live} target="_blank" rel="noopener noreferrer">
                           <button>Live Site</button>
                       </a>
