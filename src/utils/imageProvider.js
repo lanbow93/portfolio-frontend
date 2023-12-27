@@ -1,4 +1,5 @@
 import ejs from "../img/ejsIcon.png"
+import joelbay from "../img/JoelbayPortfolio.png"
 import homeAutomation from "../img/homeAutomationIcon.png"
 import iot from "../img/iotIcon.png"
 import mongoose from "../img/mongoose_icon.png"
@@ -36,6 +37,8 @@ export function imageProvider(name){
             return iot;
         case "JAVASCRIPT":
             return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg";
+        case "JOELBAY":
+            return joelbay;
         case "JQUERY":
             return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg";
         case "LINUX":

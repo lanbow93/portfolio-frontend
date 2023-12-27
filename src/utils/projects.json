@@ -1,5 +1,16 @@
  [
   {
+    "name": "Joelbay Collections",
+    "live": "https://joelbaycollections.netlify.app/",
+    "frontend": "https://github.com/lanbow93/joelbay_frontend",
+    "backend": "https://github.com/lanbow93/joelbay_backend",
+    "image": "JOELBAY",
+    "languagesUsed":"HTML, SASS, Typescript, Express, Mongoose, MongoDB, GIT",
+    "projectid": "project-1",
+    "description": "RPG of Legends is a basic web-based role-playing game that allows users to create characters, embark on quests, and level up. Users can create accounts, log in, create characters with unique attributes, and send their characters on quests to earn experience points.",
+    "projectDetails": ["Spearheaded the development of Joelbay Collections, showcasing expertise in crafting robust backend solutions for e-commerce platforms.","Leveraged a cutting-edge tech stack, mastering Node.js, Express, Sequelize, and JWT, while seamlessly integrating external services for enhanced functionality.", "Demonstrated skills on a live site, highlighting proficiency in creating and optimizing API routes for seamless user experiences and efficient data management"]    
+  },
+  {
     "name": "RPG OF LEGENDS",
     "live": "https://rpg-of-legends.netlify.app/",
     "frontend": "https://github.com/lanbow93/simple_rpg_frontend",
